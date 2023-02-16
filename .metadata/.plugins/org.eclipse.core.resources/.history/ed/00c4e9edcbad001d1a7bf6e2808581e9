@@ -1,0 +1,12 @@
+package com.TechStalWarts.testCase;
+
+import org.testng.annotations.Test;
+
+public class TC_LogInTest {
+
+	
+	@Test
+	public void logInTest() {
+		
+	}
+}

@@ -1,0 +1,7 @@
+package com.TechStalWarts.testCase;
+
+import com.TechStalWarts.pageObjects.BaseClass;
+
+public class TC_EmployeeTest extends BaseClass {
+
+}

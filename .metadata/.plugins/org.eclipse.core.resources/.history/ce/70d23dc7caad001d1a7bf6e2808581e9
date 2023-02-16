@@ -1,0 +1,5 @@
+package com.TechStalWarts.pageObjects;
+
+public class BaseClass {
+
+}

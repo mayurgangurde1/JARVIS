@@ -1,0 +1,32 @@
+package com.TechStalWarts.pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import com.TechStalWarts.constants.FrameWorkConstants;
+
+public class BaseClass {
+
+
+	public String baseURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+	public String userName="Admin";
+	public String pass="admin123";
+	public  WebDriver driver;
+	
+	public BasePage(WebDriver driver) {
+		this.driver=driver;
+	}
+
+	@BeforeClass
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver",FrameWorkConstants.getChromedriverpath());
+		driver=new ChromeDriver();
+	}
+
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
+}

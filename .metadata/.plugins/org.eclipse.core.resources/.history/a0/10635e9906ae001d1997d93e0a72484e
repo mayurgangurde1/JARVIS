@@ -1,0 +1,28 @@
+package com.TechStalWarts.constants;
+
+public class FrameWorkConstants {
+
+	
+	private FrameWorkConstants() {
+		
+	}
+	
+	private static final String RESOURCEPATH=System.getProperty("user.dir")+"/src/test/resources";
+	private static final String CHROMEDRIVERPATH=FrameWorkConstants.getResourcepath()+"/executables/chromedriver.exe";
+	private static final String CONFIGFILEPATH=FrameWorkConstants.getResourcepath()+"/config/config.properties";
+	
+	
+	
+	public static String getChromedriverpath() {
+		return CHROMEDRIVERPATH;
+	}
+
+	public static String getConfigfilepath() {
+		return CONFIGFILEPATH;
+	}
+
+	public static String getResourcepath() {
+		return RESOURCEPATH;
+	}
+	
+}

@@ -1,0 +1,32 @@
+package com.TechStalWarts.pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class BasePage {
+
+	public String baseURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+	public String userName="Admin";
+	public String pass="admin123";
+	public  WebDriver driver;
+
+	public BasePage(WebDriver driver) {
+		this.driver=driver;
+	}
+
+
+	WebDriverWait wait=new WebDriverWait(driver, 10);
+	protected void sendKeys(By by,String value) {
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(by))).sendKeys(value);
+		//	driver.findElement(by).sendKeys(value);
+	}
+
+	protected void clicK(By by) {
+		wait.until(ExpectedConditions.elementToBeClickable(by)).click();
+		//driver.findElement(by).click();
+	}
+
+}

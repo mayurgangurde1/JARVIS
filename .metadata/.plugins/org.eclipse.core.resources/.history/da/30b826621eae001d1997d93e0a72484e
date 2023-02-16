@@ -1,0 +1,76 @@
+package com.TechStalWarts.pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+
+
+
+public class BasePage extends BaseClass {
+	public  WebDriver driver;
+	public BasePage( WebDriver driver) {
+		this.driver=driver;
+
+	}
+
+
+	protected void sendKeys(By by,String value ) {
+		driver.findElement(by).sendKeys(value);
+
+	}
+
+	protected void clicK(By by) {
+		driver.findElement(by).click();
+	}
+
+	protected void assertCondition(String msg , String tName) {
+
+		if(driver.getTitle().equals(msg)) {
+			try {
+				Assert.assertTrue(true);
+				captureScreenShot(driver, tName);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		else {
+			try {
+				Assert.assertTrue(false);
+				captureScreenShot(driver, tName);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+
+	}
+	
+	
+	protected void assertCondition2(String url ,String tName) {
+		if(driver.getCurrentUrl().equals(url)) {
+			try {
+				Assert.assertTrue(true);
+				captureScreenShot(driver, tName);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		else {
+			try {
+				Assert.assertTrue(false);
+				captureScreenShot(driver, tName);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+			
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.TechStalWarts.pageObjects;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+
+public class SideBarLinks {
+	WebDriver driver;
+	JavascriptExecutor je=(JavascriptExecutor) driver;
+
+
+	public SideBarLinks(WebDriver driver) {
+
+		super(driver);
+	}
+}

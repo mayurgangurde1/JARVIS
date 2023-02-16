@@ -1,0 +1,35 @@
+package com.TechStalWarts.pageObjects;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import com.TechStalWarts.constants.FrameWorkConstants;
+
+public class BaseClass {
+
+	public static WebDriver driver;
+	public String baseURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+	public String userName="Admin";
+	public String pass="admin123";
+	
+
+	@SuppressWarnings("deprecation")
+	@BeforeClass
+	public  void setup() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver",FrameWorkConstants.getChromedriverpath());
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get(baseURL);
+		Thread.sleep(5000);
+		
+	}
+
+//	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
+}

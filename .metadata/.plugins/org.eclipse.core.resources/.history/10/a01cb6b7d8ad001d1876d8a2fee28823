@@ -1,0 +1,30 @@
+package com.TechStalWarts.testCase;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.TechStalWarts.constants.FrameWorkConstants;
+import com.TechStalWarts.pageObjects.BaseClass;
+import com.TechStalWarts.pageObjects.LoginPage;
+
+public  class TC_LogInTest  {
+	
+	
+	@Test
+	public void logInTest() {
+		System.setProperty("webdriver.chrome.driver",FrameWorkConstants.getChromedriverpath());
+		WebDriver driver=new ChromeDriver();
+		
+		
+		
+		new LoginPage(driver).setuserName("Admin").setPass("admin123").doLogin();
+		
+		if(driver.getTitle().equals("OrangeHRM")) {
+			Assert.assertTrue(true);
+		}
+		else {
+			Assert.assertTrue(false);
+		}
+	}
+}
