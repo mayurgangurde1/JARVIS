@@ -5606,3 +5606,18 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected > 
 2023-03-04 23:02:07,958 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\InterviewTask\InterviewTask_TechStalWarts\src\main\resources
 2023-03-04 23:02:07,967 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-03-04 23:02:07,968 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-04 23:13:42,622 [Worker-45: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: InterviewTask:InterviewTask:0.0.1-SNAPSHOT @ D:\InterviewTask\InterviewTask_TechStalWarts\pom.xml.
+2023-03-04 23:13:43,625 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-04 23:13:43,626 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\InterviewTask\InterviewTask_TechStalWarts\src\main\resources
+2023-03-04 23:13:43,631 [Worker-45: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-04 23:13:43,633 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-04 23:16:50,876 [Worker-49: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: InterviewTask:InterviewTask:0.0.1-SNAPSHOT @ D:\InterviewTask\InterviewTask_TechStalWarts\pom.xml.
+2023-03-04 23:16:51,767 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-04 23:16:51,771 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\InterviewTask\InterviewTask_TechStalWarts\src\main\resources
+2023-03-04 23:16:51,776 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-04 23:16:51,779 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-04 23:17:00,479 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-04 23:17:00,480 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\InterviewTask\InterviewTask_TechStalWarts\src\main\resources
+2023-03-04 23:17:00,482 [Worker-48: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-04 23:17:00,485 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2023-03-04 23:22:41,460 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
