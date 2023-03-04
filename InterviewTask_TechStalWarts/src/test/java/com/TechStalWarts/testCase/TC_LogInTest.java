@@ -17,7 +17,7 @@ public  class TC_LogInTest extends BaseClass {
 		new LoginPage(driver).doLogout();
 	}
 
-	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData")
+	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void logInWithNoPass(Map<String , String> data) {
 		new LoginPage(driver).setuserName(data.get("username")).setPass(data.get("password")).doLogin();
 		new LoginPage(driver).checkCondition2(baseURL, "logInWithNoPass");

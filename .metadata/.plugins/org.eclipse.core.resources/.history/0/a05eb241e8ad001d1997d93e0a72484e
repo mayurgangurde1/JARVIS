@@ -1,3 +1,0 @@
-public String baseURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
-public String userName="Admin";
-public String pass="admin123";

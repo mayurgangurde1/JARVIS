@@ -29,7 +29,7 @@ public class MyInfo extends BasePage {
 
 	public MyInfo uploadimage() {
 		
-		driver.findElement(addButton).sendKeys("C:\\\\Users\\\\Admin\\\\Downloads\\\\SampleJPGImage_50kbmb.jpg");
+		driver.findElement(addButton).sendKeys("C:\\Users\\Admin\\Downloads\\SampleJPGImage_50kbmb.jpg");
 	//	sendKeys(addButton, "C:\\Users\\Admin\\Downloads\\SampleJPGImage_50kbmb.jpg");
 		return this;
 	}
