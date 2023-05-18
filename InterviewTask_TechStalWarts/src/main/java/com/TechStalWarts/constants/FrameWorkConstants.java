@@ -2,21 +2,32 @@ package com.TechStalWarts.constants;
 
 public class FrameWorkConstants {
 
-	
+
 	private FrameWorkConstants() {
-		
+
 	}
-	
+
 	private static final String RESOURCEPATH=System.getProperty("user.dir")+"/src/test/resources";
 	private static final String CHROMEDRIVERPATH=FrameWorkConstants.getResourcepath()+"/executables/chromedriver.exe";
 	private static final String CONFIGFILEPATH=FrameWorkConstants.getResourcepath()+"/config/config.properties";
 	private static final String EXCELAPTH=FrameWorkConstants.getResourcepath()+"/excel/DataSheet.xlsx";
 	private static final String RUNMNAGERSHEET="RUNMANAGER";
 	private static final String ITERATIONSHEET="Data";
-	
-	
-	
-	
+	private static final String logInPageTitle="Jarvis Invest : Wisdom meets science";
+	private static final String errorMessage="Invalid Email format";
+	private static final String errorMessageForPass="Invalid Password format";
+
+
+
+	public static String getPassErrorMsg() {
+		return errorMessageForPass;
+	}
+	public static String getReqErrorMsg() {
+		return errorMessage;
+	}
+	public static String getLogInPageTitle() {
+		return logInPageTitle;
+	}
 	public static String getRunManagerSheet() {
 		return RUNMNAGERSHEET;
 	}
@@ -39,5 +50,5 @@ public class FrameWorkConstants {
 	public static String getResourcepath() {
 		return RESOURCEPATH;
 	}
-	
+
 }

@@ -5,7 +5,10 @@
     <classes>
       <class name="com.TechStalWarts.testCase.TC_LogInTest">
         <methods>
+          <include name="verifyEmail01"/>
+          <include name="verifyEmail03"/>
           <include name="tearDown"/>
+          <include name="verifyEmail02"/>
           <include name="setup"/>
           <include name="logInTest"/>
         </methods>

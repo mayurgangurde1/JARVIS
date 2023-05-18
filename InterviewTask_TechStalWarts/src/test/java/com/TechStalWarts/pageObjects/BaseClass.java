@@ -6,16 +6,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
-import com.TechStalWarts.constants.FrameWorkConstants;
 import com.TechStalWarts.utilities.ReadConfig;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -29,19 +25,19 @@ public class BaseClass {
 	public String pass=rc.getPassWord();
 
 	@SuppressWarnings("deprecation")
-	@BeforeClass
+	@BeforeMethod
 	public  void setup() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
-//		System.setProperty("webdriver.chrome.driver",FrameWorkConstants.
-//				getChromedriverpath());
-	      driver=new ChromeDriver();
-				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				driver.get(baseURL);
-				Thread.sleep(5000);
+		//		System.setProperty("webdriver.chrome.driver",FrameWorkConstants.
+		//				getChromedriverpath());
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get(baseURL);
+		Thread.sleep(5000);
 
 	}
-	@AfterClass
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
@@ -65,5 +61,23 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 
+	}
+	
+	public void sleep() {
+	try {
+		Thread.sleep(5000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}	
+	}
+	
+	public void sleepOneSec() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

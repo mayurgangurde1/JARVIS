@@ -10,6 +10,7 @@ import org.testng.Assert;
 
 public class BasePage extends BaseClass {
 
+
 	public  WebDriver driver;
 	public BasePage( WebDriver driver) {
 		this.driver=driver;
@@ -23,9 +24,13 @@ public class BasePage extends BaseClass {
 		element.sendKeys(value);
 	}
 
+	protected void clear(By by) {
+		driver.findElement(by).clear();
+	}
 
 	protected void clicK(By by) {
 		driver.findElement(by).click();
+		sleepOneSec();
 	}
 
 
@@ -68,7 +73,21 @@ public class BasePage extends BaseClass {
 	protected void assertCondition(String msg , String tName) {
 		if(driver.getTitle().equals(msg)) {
 			Assert.assertTrue(true);
-			
+			System.out.println(tName+"  is Passed");
+			captureScreenShot(driver, tName);
+		}
+		else {
+			System.out.println(tName+"  is Failed");
+			captureScreenShot(driver, tName);
+			Assert.assertTrue(false);
+		}
+	}
+
+
+	protected void assertCondition2(String url ,String tName) {	 	
+		if(driver.getCurrentUrl().equals(url)) {
+			Assert.assertTrue(true);
+			captureScreenShot(driver, tName);
 		}
 		else {
 			captureScreenShot(driver, tName);
@@ -76,14 +95,16 @@ public class BasePage extends BaseClass {
 		}
 	}
 
-
-	protected void assertCondition2(String url ,String tName) {
-		if(driver.getCurrentUrl().equals(url)) {
+	protected void assertCondion4(String msg,By by, String methodName) {
+		String msg1=driver.findElement(by).getText();
+		if(msg.equalsIgnoreCase(msg1)) {
 			Assert.assertTrue(true);
-			captureScreenShot(driver, tName);
+			System.out.println(methodName+ " is Pass and error message is: "+ msg1);
+			captureScreenShot(driver, methodName);
 		}
 		else {
-			captureScreenShot(driver, tName);
+			System.out.println(methodName+ " is Fail");
+			captureScreenShot(driver, methodName);
 			Assert.assertTrue(false);
 		}
 	}

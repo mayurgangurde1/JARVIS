@@ -1,28 +1,45 @@
 package com.TechStalWarts.pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 public class LoginPage extends BasePage {
+	
 
 	WebDriver driver;
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
 
-	private final By userName=By.xpath("//input[@name='username']");
-	private final By passWord=By.xpath("//input[@name='password']");
-	private final By loginButton=By.xpath("//button[@type='submit']");
-	private final By logOutDropDown=By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[2]/ul/li");
-	private final By logout=By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a");
+	private final By tsLoginWithPass=By.xpath("//*[@id=\"mui-1\"]");
+	private final By userName=By.xpath("//*[@id=\"mui-2\"]");
+	private final By passWord=By.xpath("//*[@id=\"mui-6\"]");
+	private final By loginButton=By.xpath("//*[@id=\"mui-7\"]");
+	private final By logout=By.xpath("//*[@id=\"root\"]/div/div[2]/div/header/div[2]/div/button");
+	private final By errormsg=By.xpath("//p[text()='Invalid Email format']");
+	private final By errormsgPass=By.xpath("//p[text()='Invalid Password format']");
+
+
+	public LoginPage clearTExtField() {
+		clear(userName);
+		return this;
+	}
+	public LoginPage goToLoginWithUserNamePass() {
+		clicK(tsLoginWithPass);
+		return this;
+	}
 
 
 	public void doLogout()  {
-		clicK(logOutDropDown);
 		clicK(logout);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	
-	
+
+
 	public LoginPage setuserName(String uname) {
 		sendKeys(userName, uname );
 		return this;
@@ -33,17 +50,27 @@ public class LoginPage extends BasePage {
 		return this;
 	}
 
-	public void doLogin() {
+	public LoginPage doLogin() {
 		clicK(loginButton);
+		return this;
 	}
-	
-	
+
+
 	public void checkCondition(String msg ,String tName) {
 		assertCondition(msg, tName);
 	}
-	
+
 	public void checkCondition2(String url ,String tName) {
 		assertCondition2(url, tName);
+	}
+
+	public void checkCondition3(String msg,String methodName) {
+		assertCondion4(msg, errormsg, methodName);
+
+	}
+	
+	public void checkConditionForWrongPass(String msg ,String methodName) {
+		assertCondion4(msg, errormsgPass, methodName);
 	}
 
 }

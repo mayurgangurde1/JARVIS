@@ -10,8 +10,8 @@
 
   <test name="Interview Test">
       <classes>
-          <class name="com.TechStalWarts.testCase.TC_LogInTest"/>
-         <class name="com.TechStalWarts.testCase.TC_EmployeeTest"/>
+          <class name="com.TechStalWarts.testCase.TC_LogInTest"/>   
+          <class name="com.TechStalWarts.testCase.TCportFolioGeneration"/>  
           
       </classes>
   </test>
