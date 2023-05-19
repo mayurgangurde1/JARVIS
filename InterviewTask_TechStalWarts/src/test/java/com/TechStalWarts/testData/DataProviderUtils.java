@@ -31,7 +31,7 @@ public final class DataProviderUtils {
 			}
 		}
 
-		System.out.println(smaiilList.toArray());
+	//	System.out.println(smaiilList.toArray().toString());
 		return smaiilList.toArray();
 	} 	
 }
