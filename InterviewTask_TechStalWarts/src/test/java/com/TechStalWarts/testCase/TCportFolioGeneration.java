@@ -6,6 +6,7 @@ import java.util.Map;
 import org.testng.annotations.Test;
 
 import com.JarvisPortfolio.InvestmentHorizon;
+import com.JarvisPortfolio.RiskAssessment;
 import com.TechStalWarts.pageObjects.BaseClass1;
 import com.TechStalWarts.pageObjects.LoginPage;
 import com.TechStalWarts.testData.DataProviderUtils;
@@ -34,7 +35,7 @@ public class TCportFolioGeneration extends BaseClass1{
 		new InvestmentHorizon(driver).clickOnCompleteOnboarding();
 		scrollDown();
 		new InvestmentHorizon(driver).clickOnriskYears().clickOnriskStratergy().clickOnsubmit().clickOnMinBalance().clickOnContinue().clickOnConfirm();
-
+		new InvestmentHorizon(driver).clickOnUnlockNow();
 	}
 
 

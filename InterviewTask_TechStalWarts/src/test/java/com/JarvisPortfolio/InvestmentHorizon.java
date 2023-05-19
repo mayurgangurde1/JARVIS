@@ -1,12 +1,18 @@
 package com.JarvisPortfolio;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.TechStalWarts.pageObjects.BasePage;
 
 public class InvestmentHorizon extends BasePage {
 
+	WebDriverWait wait=null;
 	public InvestmentHorizon(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -19,8 +25,15 @@ public class InvestmentHorizon extends BasePage {
 	private final By minBalance=By.xpath("//button[text()='₹50,00,000']");
 	private final By clickContinue=By.xpath("//button[text()='Continue']");
 	private final By clickOnConfirm=By.xpath("(//button[text()='Confirm'])[1]");
+	private final By unlockNow=By.xpath("(//div[text()='Unlock now'])[1]");
 
 	
+	public InvestmentHorizon clickOnUnlockNow() {
+		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.elementToBeClickable(unlockNow));
+		clicK(unlockNow);
+		return this;
+	}
 	
 	public InvestmentHorizon clickOnConfirm() {
 		clicK(clickOnConfirm);

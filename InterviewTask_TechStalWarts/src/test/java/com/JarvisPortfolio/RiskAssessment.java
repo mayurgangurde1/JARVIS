@@ -1,7 +1,12 @@
 package com.JarvisPortfolio;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.TechStalWarts.pageObjects.BasePage;
 
@@ -9,12 +14,14 @@ public class RiskAssessment extends BasePage {
 
 
 	public RiskAssessment(WebDriver driver) {
+
 		super(driver);
+
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-//******************Page elements***************
+
+
+	//******************Page elements***************
 	private final By investNow=By.xpath("(//button[text()='Invest Now'])[1]");
 	private final By startNow=By.xpath("//button[text()='Start now']");
 	private final By asn1=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[5]/div[4]/ul/div[1]");
@@ -23,11 +30,11 @@ public class RiskAssessment extends BasePage {
 	private final By checkBox=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[6]/span/input");
 	private final By confirmRiskAss=By.xpath("//button[text()='I confirm my risk profile']");
 
-	
-	
-	
-	
-//******************methods****************
+
+
+
+
+	//******************methods****************
 	
 	public RiskAssessment clickOnConfirmRiskAss() {
 		clicK(confirmRiskAss);
@@ -45,8 +52,8 @@ public class RiskAssessment extends BasePage {
 		clicK(submit);
 		return this;
 	}
-	
-	
+
+
 	public RiskAssessment clickOnInvestNow() {
 		clicK(investNow);
 		return this;
@@ -55,7 +62,7 @@ public class RiskAssessment extends BasePage {
 		clicK(startNow);
 		return this;
 	}
-	
+
 	public RiskAssessment qstnOne() {
 		clicK(asn1);
 		return this;
@@ -64,17 +71,17 @@ public class RiskAssessment extends BasePage {
 		clicK(asn1);
 		return this;
 	}
-	
+
 	public RiskAssessment qstnThree() {
 		clicK(asn1);
 		return this;
 	}
-	
+
 	public RiskAssessment qstnFour() {
 		clicK(asn1);
 		return this;
 	}
-	
+
 	public RiskAssessment qstnFive() {
 		clicK(asn1);
 		return this;
@@ -99,5 +106,5 @@ public class RiskAssessment extends BasePage {
 		clicK(asn1);
 		return this;
 	}	
-	
+
 }
