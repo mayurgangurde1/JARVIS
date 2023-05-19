@@ -1,15 +1,19 @@
 package com.TechStalWarts.pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 
 
 
 public class BasePage extends BaseClass {
-
+	WebDriverWait wait=null;
 
 	public  WebDriver driver;
 	public BasePage( WebDriver driver) {
@@ -107,6 +111,13 @@ public class BasePage extends BaseClass {
 			captureScreenShot(driver, methodName);
 			Assert.assertTrue(false);
 		}
+	}
+	
+	public void clickWithCondition(By by) {
+		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.elementToBeClickable(by));
+		WebElement ele=driver.findElement(by);
+		ele.click();
 	}
 }
 

@@ -29,9 +29,10 @@ public class InvestmentHorizon extends BasePage {
 
 	
 	public InvestmentHorizon clickOnUnlockNow() {
-		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
-		wait.until(ExpectedConditions.elementToBeClickable(unlockNow));
-		clicK(unlockNow);
+//		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+//		wait.until(ExpectedConditions.elementToBeClickable(unlockNow));
+//		clicK(unlockNow);
+		clickWithCondition(unlockNow);
 		return this;
 	}
 	

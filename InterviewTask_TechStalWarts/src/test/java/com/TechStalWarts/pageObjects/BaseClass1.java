@@ -70,7 +70,7 @@ public class BaseClass1 {
 
 	public void sleep() {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -79,7 +79,7 @@ public class BaseClass1 {
 	
 	public void scrollDown() {
 		je=(JavascriptExecutor)driver;
-		je.executeScript("window.scrollBy(0,900)", "");
+		je.executeScript("window.scrollBy(0,400)", "");
 	}
 	
 
@@ -92,6 +92,8 @@ public class BaseClass1 {
 
 	}
 
+	
+	
 
 
 
