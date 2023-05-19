@@ -27,15 +27,15 @@ public class InvestmentHorizon extends BasePage {
 	private final By clickOnConfirm=By.xpath("(//button[text()='Confirm'])[1]");
 	private final By unlockNow=By.xpath("(//div[text()='Unlock now'])[1]");
 
-	
+
 	public InvestmentHorizon clickOnUnlockNow() {
-//		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
-//		wait.until(ExpectedConditions.elementToBeClickable(unlockNow));
-//		clicK(unlockNow);
+		//		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+		//		wait.until(ExpectedConditions.elementToBeClickable(unlockNow));
+		//		clicK(unlockNow);
 		clickWithCondition(unlockNow);
 		return this;
 	}
-	
+
 	public InvestmentHorizon clickOnConfirm() {
 		clicK(clickOnConfirm);
 		return this;
@@ -50,7 +50,7 @@ public class InvestmentHorizon extends BasePage {
 		return this;
 	}
 	public InvestmentHorizon clickOnCompleteOnboarding() {
-		clicK(onboarding);
+		clickWithCondition(onboarding);
 		return this;
 	}
 	public InvestmentHorizon clickOnriskYears() {

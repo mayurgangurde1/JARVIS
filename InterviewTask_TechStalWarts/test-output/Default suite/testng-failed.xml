@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TechStalWarts.testCase.TC_LogInTest">
+      <class name="com.TechStalWarts.testCase.TCportFolioGeneration">
         <methods>
-          <include name="verifyEmail01"/>
-          <include name="verifyEmail03"/>
           <include name="tearDown"/>
-          <include name="verifyEmail02"/>
+          <include name="pageObjects"/>
           <include name="setup"/>
-          <include name="logInTest"/>
+          <include name="ckyc" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.TechStalWarts.testCase.TC_LogInTest -->
+      </class> <!-- com.TechStalWarts.testCase.TCportFolioGeneration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

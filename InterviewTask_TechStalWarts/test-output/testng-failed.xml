@@ -12,6 +12,9 @@
           <include name="tearDown"/>
           <include name="pageObjects"/>
           <include name="setup"/>
+          <include name="ckyc" invocation-numbers="0"/>
+          <include name="investmentHorizon" invocation-numbers="0"/>
+          <include name="riskAssessment" invocation-numbers="0"/>
           <include name="personalisePortfolio" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.TechStalWarts.testCase.TCportFolioGeneration -->

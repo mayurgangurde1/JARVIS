@@ -10,7 +10,7 @@ public class LoginPage extends BasePage {
 		super(driver);
 	}
 
-	private final By tsLoginWithPass=By.xpath("//*[@id=\"mui-1\"]");
+	private final By tsLoginWithPass=By.xpath("//button[text()='Login with ']");
 	private final By userName=By.xpath("//*[@id=\"mui-2\"]");
 	private final By passWord=By.xpath("//*[@id=\"mui-6\"]");
 	private final By loginButton=By.xpath("//*[@id=\"mui-7\"]");
@@ -24,7 +24,7 @@ public class LoginPage extends BasePage {
 		return this;
 	}
 	public LoginPage goToLoginWithUserNamePass() {
-		clicK(tsLoginWithPass);
+		clickWithCondition(tsLoginWithPass);
 		return this;
 	}
 
