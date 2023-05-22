@@ -1,8 +1,8 @@
 package com.JarvisPortfolio;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import com.TechStalWarts.pageObjects.BasePage;
 
@@ -21,13 +21,34 @@ public class Personalisedportfolio extends BasePage {
 	private final By payWithPaymentMode=By.xpath("(//button[text()='Pay '])[1]");
 	private final By payUsingUPI=By.xpath("//button[text()='Pay using UPI / QR']");
 	private final By frame=By.xpath("/html/body/div[4]/iframe");
-	private final By enterUPIID=By.xpath("//label[text()='Enter your UPI ID']");
+	private final By enterUPIID=By.xpath("//*[@id='vpa-upi']");
 	private final By payNow=By.xpath("//button[text()='Pay Now']");
 	private final By proceedToCKYC=By.xpath("(//button[text()='Proceed to CKYC'])[1]");
+	private final By clickOnQR=By.xpath("/html/body/div[2]/div[2]/div/div[3]/div[3]/form/div[2]/div[5]/div[1]/div[1]/div/div/div[1]/div[2]/div[1]/div[1]/div/div");
+	private final By onboarding=By.xpath("//div[@class='MuiBox-root css-8atqhb']");
+	private final By page=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[5]");
+	private final By clickContinue=By.xpath("//button[text()='Continue']");
 
 
+	public Personalisedportfolio clickOnContinue() {
+		clickWithCondition(clickContinue);
+		return this;
+	}
+	public Personalisedportfolio clickonPage() {
+		clicK(page);
+		driver.findElement(page).sendKeys(Keys.TAB, Keys.ENTER);
+		return this;
+	}
 
 
+	public Personalisedportfolio clickOnOnboarding() {
+		clickWithCondition(onboarding);
+		return this;
+	}
+	public Personalisedportfolio clickOnQRCoce() {
+		clickWithCondition(clickOnQR);
+		return this;
+	}
 	public Personalisedportfolio clickOnProceedToCKYC() {
 		clickWithCondition(proceedToCKYC);
 		return this;

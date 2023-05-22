@@ -3,6 +3,7 @@ package com.TechStalWarts.pageObjects;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,8 +22,6 @@ public class BasePage extends BaseClass {
 	}
 
 
-
-
 	protected void sendKeys(By by,String value ) {
 		WebElement element=driver.findElement(by);
 		element.sendKeys(value);
@@ -33,7 +32,10 @@ public class BasePage extends BaseClass {
 	}
 
 	protected void clicK(By by) {
-		driver.findElement(by).click();
+		//	driver.findElement(by).click();		
+		WebElement l = driver.findElement(by);
+		JavascriptExecutor j = (JavascriptExecutor) driver;
+		j.executeScript("arguments[0].click();", l);
 		sleepOneSec();
 	}
 
@@ -112,12 +114,14 @@ public class BasePage extends BaseClass {
 			Assert.assertTrue(false);
 		}
 	}
-	
+
 	public void clickWithCondition(By by) {
 		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
 		wait.until(ExpectedConditions.elementToBeClickable(by));
-		WebElement ele=driver.findElement(by);
-		ele.click();
+		WebElement l=driver.findElement(by);
+		JavascriptExecutor j = (JavascriptExecutor) driver;
+		j.executeScript("arguments[0].click();", l);
+
 	}
 }
 

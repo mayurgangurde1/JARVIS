@@ -15,10 +15,15 @@ public class CKYC extends BasePage{
 	private final By pan=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input");
 	private final By dob=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[5]/div/input");
 	private final By submitVer=By.xpath("//button[text()='Submit for verification']");
+	private final By clientAgree=By.xpath("//button[text()='Proceed to Client Agreement']");
 
 
 
 
+	public CKYC clickOnclientAgreement() {
+		clickWithCondition(clientAgree);
+		return this;
+	}
 	public CKYC clickOnSubmitVer() {
 		clickWithCondition(submitVer);
 		return this;

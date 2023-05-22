@@ -48,7 +48,6 @@ public class RiskAssessment extends BasePage {
 		return this;
 	}
 
-
 	public RiskAssessment clickOnInvestNow() {
 		clicK(investNow);
 		return this;

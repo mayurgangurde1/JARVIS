@@ -9,13 +9,12 @@
     <classes>
       <class name="com.TechStalWarts.testCase.TCportFolioGeneration">
         <methods>
+          <include name="tc_004" invocation-numbers="0"/>
+          <include name="tc_005" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="pageObjects"/>
           <include name="setup"/>
-          <include name="ckyc" invocation-numbers="0"/>
-          <include name="investmentHorizon" invocation-numbers="0"/>
-          <include name="riskAssessment" invocation-numbers="0"/>
-          <include name="personalisePortfolio" invocation-numbers="0"/>
+          <include name="tc_003" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.TechStalWarts.testCase.TCportFolioGeneration -->
     </classes>

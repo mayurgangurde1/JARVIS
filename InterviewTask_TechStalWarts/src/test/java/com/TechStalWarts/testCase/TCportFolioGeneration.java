@@ -16,7 +16,7 @@ import com.TechStalWarts.testData.DataProviderUtils;
 public class TCportFolioGeneration extends BaseClass1{
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
-	public void doLogin(Map<String , String> data,Method method) {
+	public void tc_001(Map<String , String> data,Method method) {
 		new LoginPage(driver).goToLoginWithUserNamePass().clearTExtField()
 		.setuserName(data.get("username")).setPass(data.get("password")).doLogin();
 		sleep();
@@ -24,8 +24,8 @@ public class TCportFolioGeneration extends BaseClass1{
 
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
-	public void riskAssessment(Map<String , String> data) {
-		riskass.clickOnStart(). //clickOnInvestNow().
+	public void tc_002(Map<String , String> data) {
+		riskass.clickOnInvestNow().clickOnStart(). 
 		qstnOne().qstnTwo().qstnThree().qstnFour().qstnFive().qstnSix().qstnSeven().qstnEgt().qstnNine().qstnTen();
 		scrollDown();
 		riskass.clickOnSubmit().confirmSubmit();
@@ -34,39 +34,37 @@ public class TCportFolioGeneration extends BaseClass1{
 	}
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData")
-	public void investmentHorizon(Map<String , String> data) {
-	//	new InvestmentHorizon(driver).clickOnCompleteOnboarding();
+	public void tc_003(Map<String , String> data) {
+	
 		scrollDown();
 		new InvestmentHorizon(driver).clickOnriskYears().clickOnriskStratergy().clickOnsubmit().clickOnMinBalance().clickOnContinue().clickOnConfirm();
 		new InvestmentHorizon(driver).clickOnUnlockNow();
 	}
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData")
-	public void personalisePortfolio(Map<String , String> data) {
-	//	new InvestmentHorizon(driver).clickOnCompleteOnboarding();
+	public void tc_004(Map<String , String> data) {
 		scrollDown();
-	//	new InvestmentHorizon(driver).clickOnUnlockNow();
+		//	new InvestmentHorizon(driver).clickOnUnlockNow();
 		new Personalisedportfolio(driver).clickOnPay().clickOnAgree().clickonUPI().typeUPIID(FrameWorkConstants.getUPIID()).clickOnverify();
 		scrollDown();
 		new Personalisedportfolio(driver).clickOnPayWithPaymentMode().switchFrames();
 		scrollDown();
-		new Personalisedportfolio(driver). clickOnPayUsingUPI().enterUPIID(FrameWorkConstants.getUPIIDRazorPay()).clickOnPayNow().clickOnProceedToCKYC();
-
-	}
-
-
-	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
-	public void ckyc(Map<String , String> data) {
-
+		new Personalisedportfolio(driver). clickOnPayUsingUPI() .enterUPIID(FrameWorkConstants.getUPIIDRazorPay()).clickOnPayNow().clickOnContinue().clickOnProceedToCKYC();
 		
-		new CKYC(driver).enterPANnum(data.get("PAN")).enterDOB(data.get("DOB")).clickOnSubmitVer();
-
-
 
 	}
+	
+	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
+	public void tc_005(Map<String , String> data) {	
+		new CKYC(driver).enterPANnum(data.get("PAN")).enterDOB(data.get("DOB")).clickOnSubmitVer();
+		scrollDown();
+		new CKYC(driver).clickOnclientAgreement();
 
-
-
-
-
-}
+	}
+	
+	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
+	public void tc_006(Map<String , String> data) {
+		
+		
+		}
+	}

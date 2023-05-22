@@ -1,11 +1,7 @@
 package com.JarvisPortfolio;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.TechStalWarts.pageObjects.BasePage;
@@ -18,7 +14,7 @@ public class InvestmentHorizon extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	private final By riskYears=By.xpath("//button[text()='3 Yr']");
+	private final By riskYears=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div[3]/div[2]/button[2]");
 	private final By riskStratergy=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[2]/div[4]/div[2]/div[1]");
 	private final By submit=By.xpath("//button[text()='Submit my strategy']");
 	private final By onboarding=By.xpath("//button[text()='Complete onboarding']");
