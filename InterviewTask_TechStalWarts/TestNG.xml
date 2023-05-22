@@ -12,7 +12,7 @@
       <classes>
           <class name="com.TechStalWarts.testCase.TC_LogInTest"/>   
           <class name="com.TechStalWarts.testCase.TC_portFolioGeneration"/>  
-          
+          <class name="com.TechStalWarts.testCase.TC_Protect"/> 
       </classes>
   </test>
  

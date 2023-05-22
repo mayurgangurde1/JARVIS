@@ -18,10 +18,14 @@ public class FrameWorkConstants {
 	private static final String errorMessageForPass="Invalid Password format";
 	private static final String upiID="kiran@paytm";
 	private static final String upiIDrazorPay="success@razorpay";
+	private static final String filePath=FrameWorkConstants.getResourcepath()+"/excel/PortfolioSyncUpload.xlsx";
 
 
 
 
+	public static String getFilePath() {
+		return filePath;
+	}
 	public static String getUPIIDRazorPay() {
 		return upiIDrazorPay;
 	}

@@ -33,6 +33,9 @@ public class BasePage extends BaseClass {
 
 	protected void clicK(By by) {
 		//	driver.findElement(by).click();		
+		
+		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.elementToBeClickable(by));
 		WebElement l = driver.findElement(by);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", l);
@@ -122,6 +125,7 @@ public class BasePage extends BaseClass {
 		WebElement l=driver.findElement(by);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", l);
+		sleepOneSec();
 
 	}
 }

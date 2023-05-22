@@ -35,8 +35,8 @@ public class TC_portFolioGeneration extends BaseClass1{
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData")
 	public void tc_003(Map<String , String> data) {
-	new InvestmentHorizon(driver).clickOnCompleteOnboarding();
 		scrollDown();
+		sleep();
 		new InvestmentHorizon(driver).clickOnriskYears().clickOnriskStratergy().clickOnsubmit().clickOnMinBalance().clickOnContinue().clickOnConfirm();
 		new InvestmentHorizon(driver).clickOnUnlockNow();
 	}
@@ -50,10 +50,10 @@ public class TC_portFolioGeneration extends BaseClass1{
 		new Personalisedportfolio(driver).clickOnPayWithPaymentMode().switchFrames();
 		scrollDown();
 		new Personalisedportfolio(driver). clickOnPayUsingUPI() .enterUPIID(FrameWorkConstants.getUPIIDRazorPay()).clickOnPayNow().clickOnContinue().clickOnProceedToCKYC();
-		
+
 
 	}
-	
+
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_005(Map<String , String> data) {	
 		new CKYC(driver).enterPANnum(data.get("PAN")).enterDOB(data.get("DOB")).clickOnSubmitVer();
@@ -61,10 +61,10 @@ public class TC_portFolioGeneration extends BaseClass1{
 		new CKYC(driver).clickOnclientAgreement();
 
 	}
-	
+
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_006(Map<String , String> data) {
-		
-		
-		}
+
+
 	}
+}

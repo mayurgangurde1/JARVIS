@@ -27,7 +27,6 @@ public class BaseClass1 {
 	public String baseURL=rc.getApplicationURl();
 	public String userName=rc.getUserName();
 	public String pass=rc.getPassWord();
-	public JavascriptExecutor je;
 
 	@SuppressWarnings("deprecation")
 	@BeforeSuite
@@ -78,8 +77,8 @@ public class BaseClass1 {
 	}
 	
 	public void scrollDown() {
-		je=(JavascriptExecutor)driver;
-		je.executeScript("window.scrollBy(0,400)", "");
+		JavascriptExecutor je=(JavascriptExecutor)driver;
+		je.executeScript("window.scrollBy(0,600)", "");
 	}
 	
 

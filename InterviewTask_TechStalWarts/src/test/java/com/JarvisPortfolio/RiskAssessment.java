@@ -18,25 +18,66 @@ public class RiskAssessment extends BasePage {
 
 	//******************Page elements***************
 	private final By investNow=By.xpath("(//button[text()='Invest Now'])[1]");
+	private final By investNowProtect=By.xpath("(//button[text()='Invest Now'])[2]");
 	private final By startNow=By.xpath("//button[text()='Start now']");
 	private final By asn1=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[5]/div[4]/ul/div[1]");
+	private final By ansForProtect=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div[5]/div[4]/ul/div[1]");
 	private final By submit=By.xpath("//button[text()='Submit my responses']");
 	private final By confirmSubmit=By.xpath("(//button[text()='Submit my responses'])[2]");
-	private final By checkBox=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[6]/span/input");
+	private final By checkBox=By.xpath("//input[@type='checkbox']");
 	private final By confirmRiskAss=By.xpath("//button[text()='I confirm my risk profile']");
+	
 
 
 
 
 
 	//******************methods****************
-	
+
+	public RiskAssessment ProOneAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}
+	public RiskAssessment ProTwoAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}public RiskAssessment ProThreeAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}public RiskAssessment ProFourAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}public RiskAssessment ProFiveAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}public RiskAssessment ProSixAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}public RiskAssessment ProSevenAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}public RiskAssessment ProEightAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}public RiskAssessment ProNineAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}public RiskAssessment ProTenAns() {
+		clickWithCondition(ansForProtect);
+		return this;
+	}
+
+	public RiskAssessment clickOnInvestNowTwo() {
+		clickWithCondition(investNowProtect);
+		return this;
+	}
+
 	public RiskAssessment clickOnConfirmRiskAss() {
 		clicK(confirmRiskAss);
 		return this;
 	}
 	public RiskAssessment clickOnCheckBox() {
-		clicK(checkBox);
+		clickWithCondition(checkBox);
 		return this;
 	}
 	public RiskAssessment confirmSubmit() {
@@ -48,10 +89,10 @@ public class RiskAssessment extends BasePage {
 		return this;
 	}
 
-	public RiskAssessment clickOnInvestNow() {
-		clicK(investNow);
-		return this;
-	}
+		public RiskAssessment clickOnInvestNow() {
+			clicK(investNow);
+			return this;
+		}
 	public RiskAssessment clickOnStart() {
 		clicK(startNow);
 		return this;
