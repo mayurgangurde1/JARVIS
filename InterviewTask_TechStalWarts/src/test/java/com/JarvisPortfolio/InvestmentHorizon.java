@@ -14,7 +14,7 @@ public class InvestmentHorizon extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	private final By riskYears=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div[3]/div[2]/button[2]");
+	private final By riskYears=By.xpath("(//button[@class='MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium  css-1sdf1vm'])[2]");
 	private final By riskStratergy=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[2]/div[4]/div[2]/div[1]");
 	private final By submit=By.xpath("//button[text()='Submit my strategy']");
 	private final By onboarding=By.xpath("//button[text()='Complete onboarding']");
@@ -50,7 +50,7 @@ public class InvestmentHorizon extends BasePage {
 		return this;
 	}
 	public InvestmentHorizon clickOnriskYears() {
-		clicK(riskYears);
+		clickWithCondition(riskYears);
 		return this;
 	}
 

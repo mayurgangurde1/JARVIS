@@ -118,6 +118,7 @@ public class BasePage extends BaseClass {
 	public void clickWithCondition(By by) {
 		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
 		wait.until(ExpectedConditions.elementToBeClickable(by));
+		
 		WebElement l=driver.findElement(by);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", l);

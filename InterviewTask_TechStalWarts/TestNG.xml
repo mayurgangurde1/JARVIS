@@ -11,7 +11,7 @@
   <test name="Interview Test">
       <classes>
           <class name="com.TechStalWarts.testCase.TC_LogInTest"/>   
-          <class name="com.TechStalWarts.testCase.TCportFolioGeneration"/>  
+          <class name="com.TechStalWarts.testCase.TC_portFolioGeneration"/>  
           
       </classes>
   </test>

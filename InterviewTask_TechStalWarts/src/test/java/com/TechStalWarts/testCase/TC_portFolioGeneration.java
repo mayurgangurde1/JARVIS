@@ -13,7 +13,7 @@ import com.TechStalWarts.pageObjects.BaseClass1;
 import com.TechStalWarts.pageObjects.LoginPage;
 import com.TechStalWarts.testData.DataProviderUtils;
 
-public class TCportFolioGeneration extends BaseClass1{
+public class TC_portFolioGeneration extends BaseClass1{
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_001(Map<String , String> data,Method method) {
@@ -35,7 +35,7 @@ public class TCportFolioGeneration extends BaseClass1{
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData")
 	public void tc_003(Map<String , String> data) {
-	
+	new InvestmentHorizon(driver).clickOnCompleteOnboarding();
 		scrollDown();
 		new InvestmentHorizon(driver).clickOnriskYears().clickOnriskStratergy().clickOnsubmit().clickOnMinBalance().clickOnContinue().clickOnConfirm();
 		new InvestmentHorizon(driver).clickOnUnlockNow();
@@ -44,7 +44,7 @@ public class TCportFolioGeneration extends BaseClass1{
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData")
 	public void tc_004(Map<String , String> data) {
 		scrollDown();
-		//	new InvestmentHorizon(driver).clickOnUnlockNow();
+		new InvestmentHorizon(driver).clickOnUnlockNow();
 		new Personalisedportfolio(driver).clickOnPay().clickOnAgree().clickonUPI().typeUPIID(FrameWorkConstants.getUPIID()).clickOnverify();
 		scrollDown();
 		new Personalisedportfolio(driver).clickOnPayWithPaymentMode().switchFrames();

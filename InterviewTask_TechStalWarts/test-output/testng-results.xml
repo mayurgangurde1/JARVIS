@@ -1,48 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-22T14:06:27 IST" name="InterviewTask_techStalWarts" finished-at="2023-05-22T14:08:48 IST" duration-ms="140082">
+  <suite started-at="2023-05-22T15:54:38 IST" name="InterviewTask_techStalWarts" finished-at="2023-05-22T15:57:48 IST" duration-ms="190572">
     <groups>
     </groups>
-    <test started-at="2023-05-22T14:06:27 IST" name="Interview Test" finished-at="2023-05-22T14:08:48 IST" duration-ms="140082">
-      <class name="com.TechStalWarts.testCase.TCportFolioGeneration">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.TechStalWarts.testCase.TCportFolioGeneration@54c5a2ff]" started-at="2023-05-22T14:06:17 IST" name="setup" finished-at="2023-05-22T14:06:27 IST" duration-ms="10283" status="PASS">
+    <test started-at="2023-05-22T15:54:38 IST" name="Interview Test" finished-at="2023-05-22T15:57:48 IST" duration-ms="190572">
+      <class name="com.TechStalWarts.testCase.TC_portFolioGeneration">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@54c5a2ff]" started-at="2023-05-22T15:54:26 IST" name="setup" finished-at="2023-05-22T15:54:38 IST" duration-ms="11536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="pageObjects()[pri:0, instance:com.TechStalWarts.testCase.TCportFolioGeneration@54c5a2ff]" started-at="2023-05-22T14:06:29 IST" name="pageObjects" finished-at="2023-05-22T14:06:29 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="pageObjects()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@54c5a2ff]" started-at="2023-05-22T15:54:39 IST" name="pageObjects" finished-at="2023-05-22T15:54:39 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObjects -->
-        <test-method signature="tc_001(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TCportFolioGeneration@54c5a2ff]" started-at="2023-05-22T14:06:29 IST" name="tc_001" description="Login" data-provider="getData" finished-at="2023-05-22T14:06:33 IST" duration-ms="3959" status="PASS">
+        <test-method signature="tc_001(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@54c5a2ff]" started-at="2023-05-22T15:54:39 IST" name="tc_001" description="Login" data-provider="getData" finished-at="2023-05-22T15:54:43 IST" duration-ms="4051" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=123, DOB=, AdharCardNum=, testname=tc_001, PAN=, execute=yes, username=kiran.jadhav1993+11@gmail.com}]]>
+                <![CDATA[{password=123, DOB=, AdharCardNum=, testname=tc_001, PAN=, execute=yes, username=kiran.jadhav1993+12@gmail.com}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.TechStalWarts.testCase.TCportFolioGeneration.tc_001(java.util.Map,java.lang.reflect.Method)]]>
+                <![CDATA[public void com.TechStalWarts.testCase.TC_portFolioGeneration.tc_001(java.util.Map,java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_001 -->
-        <test-method signature="tc_002(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TCportFolioGeneration@54c5a2ff]" started-at="2023-05-22T14:06:33 IST" name="tc_002" description="Risk Assessment" data-provider="getData" finished-at="2023-05-22T14:07:17 IST" duration-ms="44285" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, DOB=, AdharCardNum=, testname=tc_002, PAN=, execute=yes, username=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_002 -->
-        <test-method signature="tc_003(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TCportFolioGeneration@54c5a2ff]" started-at="2023-05-22T14:07:17 IST" name="tc_003" description="Investment Horizon" data-provider="getData" finished-at="2023-05-22T14:07:47 IST" duration-ms="30183" status="FAIL">
+        <test-method signature="tc_003(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@54c5a2ff]" started-at="2023-05-22T15:54:43 IST" name="tc_003" description="Investment Horizon" data-provider="getData" finished-at="2023-05-22T15:56:09 IST" duration-ms="86083" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,47 +39,27 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div[3]/div[2]/button[2]"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: (//button[@class='MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium  css-1sdf1vm'])[2] (tried for 50 second(s) with 500 milliseconds interval)
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4864e074fca319e562ec123c82cbdeae, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div[3]/div[2]/button[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60048/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4864e074fca319e562ec123c82cbdeae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61529/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b891159c0a9989cd8caf05c239b8b4c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div[3]/div[2]/button[2]"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//button[@class='MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium  css-1sdf1vm'])[2] (tried for 50 second(s) with 500 milliseconds interval)
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4864e074fca319e562ec123c82cbdeae, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div[3]/div[2]/button[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60048/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4864e074fca319e562ec123c82cbdeae
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:36)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61529/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b891159c0a9989cd8caf05c239b8b4c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:120)
 at com.JarvisPortfolio.InvestmentHorizon.clickOnriskYears(InvestmentHorizon.java:53)
-at com.TechStalWarts.testCase.TCportFolioGeneration.tc_003(TCportFolioGeneration.java:40)
+at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_003(TC_portFolioGeneration.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,11 +90,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_003 -->
-        <test-method signature="tc_004(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TCportFolioGeneration@54c5a2ff]" started-at="2023-05-22T14:07:47 IST" name="tc_004" description="Personalise portfolio" data-provider="getData" finished-at="2023-05-22T14:08:18 IST" duration-ms="30156" status="FAIL">
+        <test-method signature="tc_004(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@54c5a2ff]" started-at="2023-05-22T15:56:09 IST" name="tc_004" description="Personalise portfolio" data-provider="getData" finished-at="2023-05-22T15:57:17 IST" duration-ms="68126" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -133,47 +102,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Pay ']"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()='Continue'] (tried for 50 second(s) with 500 milliseconds interval)
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4864e074fca319e562ec123c82cbdeae, findElement {using=xpath, value=//button[text()='Pay ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60048/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4864e074fca319e562ec123c82cbdeae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61529/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b891159c0a9989cd8caf05c239b8b4c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Pay ']"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()='Continue'] (tried for 50 second(s) with 500 milliseconds interval)
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4864e074fca319e562ec123c82cbdeae, findElement {using=xpath, value=//button[text()='Pay ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60048/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4864e074fca319e562ec123c82cbdeae
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:36)
-at com.JarvisPortfolio.Personalisedportfolio.clickOnPay(Personalisedportfolio.java:87)
-at com.TechStalWarts.testCase.TCportFolioGeneration.tc_004(TCportFolioGeneration.java:48)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61529/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b891159c0a9989cd8caf05c239b8b4c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:120)
+at com.JarvisPortfolio.Personalisedportfolio.clickOnContinue(Personalisedportfolio.java:34)
+at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_004(TC_portFolioGeneration.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -204,11 +153,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_004 -->
-        <test-method signature="tc_005(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TCportFolioGeneration@54c5a2ff]" started-at="2023-05-22T14:08:18 IST" name="tc_005" description="CKYC" data-provider="getData" finished-at="2023-05-22T14:08:48 IST" duration-ms="30022" status="FAIL">
+        <test-method signature="tc_005(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@54c5a2ff]" started-at="2023-05-22T15:57:17 IST" name="tc_005" description="CKYC" data-provider="getData" finished-at="2023-05-22T15:57:48 IST" duration-ms="30870" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -216,47 +165,32 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4864e074fca319e562ec123c82cbdeae, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60048/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4864e074fca319e562ec123c82cbdeae]]>
+Command: [2b891159c0a9989cd8caf05c239b8b4c, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61529/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b891159c0a9989cd8caf05c239b8b4c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4864e074fca319e562ec123c82cbdeae, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60048/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4864e074fca319e562ec123c82cbdeae
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+Command: [2b891159c0a9989cd8caf05c239b8b4c, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61529/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b891159c0a9989cd8caf05c239b8b4c
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 at com.TechStalWarts.pageObjects.BasePage.sendKeys(BasePage.java:26)
 at com.JarvisPortfolio.CKYC.enterPANnum(CKYC.java:33)
-at com.TechStalWarts.testCase.TCportFolioGeneration.tc_005(TCportFolioGeneration.java:59)
+at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_005(TC_portFolioGeneration.java:59)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -285,13 +219,41 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Connection reset
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+... 35 more
+Caused by: java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_005 -->
-        <test-method signature="tc_006(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TCportFolioGeneration@54c5a2ff]" started-at="2023-05-22T14:08:48 IST" name="tc_006" description="Client Agreement" data-provider="getData" finished-at="2023-05-22T14:08:48 IST" duration-ms="2" status="PASS">
+        <test-method signature="tc_006(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@54c5a2ff]" started-at="2023-05-22T15:57:48 IST" name="tc_006" description="Client Agreement" data-provider="getData" finished-at="2023-05-22T15:57:48 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -302,11 +264,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_006 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TechStalWarts.testCase.TCportFolioGeneration@54c5a2ff]" started-at="2023-05-22T14:08:48 IST" name="tearDown" finished-at="2023-05-22T14:08:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@54c5a2ff]" started-at="2023-05-22T15:57:49 IST" name="tearDown" finished-at="2023-05-22T15:57:49 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.TechStalWarts.testCase.TCportFolioGeneration -->
+      </class> <!-- com.TechStalWarts.testCase.TC_portFolioGeneration -->
     </test> <!-- Interview Test -->
   </suite> <!-- InterviewTask_techStalWarts -->
 </testng-results>
