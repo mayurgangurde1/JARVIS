@@ -34,18 +34,21 @@ public class TC_OneStock extends BaseClass1{
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_os_003(Map<String , String> data,Method method) {
 		new OneStock(driver).clickOnPay().clickOnAgree();sleep();
-		new Personalisedportfolio(driver).clickOnUPIOnesTock().enterUPIIDProtect(FrameWorkConstants.getUPIID()).clickOnverify();
+		new Personalisedportfolio(driver).clickOnUPIOnesTock().
+		enterUPIIDProtect(FrameWorkConstants.getUPIID()).clickOnverify();
 		scrollDown();
 		new Personalisedportfolio(driver).clickOnpayWithPaymentModeProtce().switchFrames();
 		scrollDown();
-		new Personalisedportfolio(driver). clickOnPayUsingUPI() .enterUPIID(FrameWorkConstants.getUPIIDRazorPay()).clickOnPayNow();
+		new Personalisedportfolio(driver). clickOnPayUsingUPI() .
+		enterUPIID(FrameWorkConstants.getUPIIDRazorPay()).clickOnPayNow();
 		sleep();sleep(); sleep();
 		new SyncPortFolio(driver).clickOnContinue();
 		sleep();
 		new E_Sign(driver).enterPAN(data.get("PAN")).enterDOB(data.get("DOB")).clickOnSubmit();
 		sleep();sleep();sleep();
 		new E_Sign(driver).clickOnProceedToClientAgreemtn();sleep();sleep();
-		new E_Sign(driver).clickOnconfirmation().clickOnAgree().clickOnProceed().clickOnSignNow();
+		new E_Sign(driver).clickOnconfirmation().clickOnAgree().
+		clickOnProceed().clickOnSignNow();
 		
 	}
 	
