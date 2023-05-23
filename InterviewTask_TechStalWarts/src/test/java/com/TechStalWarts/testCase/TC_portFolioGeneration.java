@@ -35,6 +35,7 @@ public class TC_portFolioGeneration extends BaseClass1{
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData")
 	public void tc_003(Map<String , String> data) {
+		new InvestmentHorizon(driver).clickOnCompleteOnboarding();
 		scrollDown();
 		sleep();
 		new InvestmentHorizon(driver).clickOnriskYears().clickOnriskStratergy().clickOnsubmit().clickOnMinBalance().clickOnContinue().clickOnConfirm();

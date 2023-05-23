@@ -21,6 +21,7 @@ public class RiskAssessment extends BasePage {
 	//******************Page elements***************
 	private final By investNow=By.xpath("(//button[text()='Invest Now'])[1]");
 	private final By investNowProtect=By.xpath("(//button[text()='Invest Now'])[2]");
+	private final By investNowOneStock=By.xpath("(//button[text()='Invest Now'])[3]");
 	private final By startNow=By.xpath("//button[text()='Start now']");
 	private final By asn1=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[5]/div[4]/ul/div[1]");
 	private final By ansForProtect=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div[5]/div[4]/ul/div[1]");
@@ -28,7 +29,7 @@ public class RiskAssessment extends BasePage {
 	private final By confirmSubmit=By.xpath("(//button[text()='Submit my responses'])[2]");
 	private final By checkBox=By.xpath("//input[@type='checkbox']");
 	private final By confirmRiskAss=By.xpath("//button[text()='I Confirm my risk profile']");
-	
+
 
 
 
@@ -36,6 +37,10 @@ public class RiskAssessment extends BasePage {
 
 	//******************methods****************
 
+	public RiskAssessment clickOnInvestNowThree() {
+		clicK(investNowOneStock);
+		return this;
+	}
 	public RiskAssessment ProOneAns() {
 		clickWithCondition(ansForProtect);
 		return this;
@@ -79,10 +84,10 @@ public class RiskAssessment extends BasePage {
 		return this;
 	}
 	public RiskAssessment clickOnCheckBox() {
-//		WebElement m=driver.findElement(checkBox);
-//		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", m);
-	clicK(checkBox);
-	//	driver.findElement(checkBox).click();
+		//		WebElement m=driver.findElement(checkBox);
+		//		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", m);
+		clicK(checkBox);
+		//	driver.findElement(checkBox).click();
 		return this;
 	}
 	public RiskAssessment confirmSubmit() {
@@ -94,10 +99,10 @@ public class RiskAssessment extends BasePage {
 		return this;
 	}
 
-		public RiskAssessment clickOnInvestNow() {
-			clicK(investNow);
-			return this;
-		}
+	public RiskAssessment clickOnInvestNow() {
+		clicK(investNow);
+		return this;
+	}
 	public RiskAssessment clickOnStart() {
 		clicK(startNow);
 		return this;
