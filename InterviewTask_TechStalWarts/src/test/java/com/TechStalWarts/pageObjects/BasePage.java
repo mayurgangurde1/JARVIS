@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -133,16 +134,12 @@ public class BasePage extends BaseClass {
 	}
 	
 	
-	public void selectFromDropDown(String value , By by) {
-		driver.findElement(by).click();
-		List<WebElement> list=driver.findElements(by);
-		System.out.println(list.toString());
-		for(WebElement ele: list) {
-			if(ele.getText().equalsIgnoreCase(value)) {
-				ele.click();
-			}
-			
-		}	
+	public void selectFromDropDown( By by) {
+		WebElement ele= driver.findElement(by);
+		ele.click();
+		ele.sendKeys(Keys.DOWN,Keys.ENTER);
+		//	selectFromDropDown(FrameWorkConstants.getBrokerName(), broker);
+		
 	}
 }
 

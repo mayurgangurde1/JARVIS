@@ -12,7 +12,7 @@
           <include name="tearDown"/>
           <include name="pageObjects"/>
           <include name="setup"/>
-          <include name="tc_pro_003" invocation-numbers="0"/>
+          <include name="tc_pro_004" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.TechStalWarts.testCase.TC_Protect -->
     </classes>
