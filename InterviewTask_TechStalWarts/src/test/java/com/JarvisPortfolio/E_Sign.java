@@ -23,10 +23,20 @@ public class E_Sign extends BasePage {
 	private final By confirmThat=By.xpath("//div[text()='I confirm that ']");
 	private final By agreeTHat=By.xpath("//div[text()='I agree the ']");
 	private final By proceed=By.xpath("//div[text()='Proceed ']");
+	private final By signNow=By.xpath("//div[text()='Sign Now ']");
+	private final By OTP=By.xpath("//*[@id=\"otp_0_2ysomdjciogli03wey7\"]");
+	
+	public E_Sign enterOTP() {
+		actionSendKeys(driver.findElement(OTP), baseURL);
+		return this;
+	}
 	
 	
-	
-	
+
+	public E_Sign clickOnSignNow() {
+		clicK(signNow);
+		return this;
+	}
 	public E_Sign clickOnProceed() {
 		clicK(proceed);
 		return this;

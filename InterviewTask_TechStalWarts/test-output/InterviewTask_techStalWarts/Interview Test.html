@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Interview Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 23 14:01:09 IST 2023</td>
+<td>Started on:</td><td>Tue May 23 15:25:54 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29710 ms)</td>
+<tr><td>Total time:</td><td>72 seconds (72188 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,32 +76,59 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.TechStalWarts.testCase.TC_Protect.tc_pro_004()'><b>tc_pro_004</b><br>Test class: com.TechStalWarts.testCase.TC_Protect<br>Test method: CKYC<br>Parameters: {password=, DOB=12021993, AdharCardNum=, testname=tc_pro_004, PAN=BAYPJ2260G, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_004(java.util.Map,java.lang.reflect.Method)</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@aria-invalid=&apos;false&apos; and @type=&apos;text&apos; and @maxlength=&apos;12&apos;]
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Continue&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7276b672e560d37fcef3c4506bb7aeeb, findElement {using=xpath, value=//button[text()=&apos;Continue&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59449}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59449/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7276b672e560d37fcef3c4506bb7aeeb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.TechStalWarts.pageObjects.BasePage.sendKeys(BasePage.java:33)
-	at com.JarvisPortfolio.E_Sign.enterPAN(E_Sign.java:57)
-	at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:63)
+	at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:44)
+	at com.JarvisPortfolio.SyncPortFolio.clickOnContinue(SyncPortFolio.java:33)
+	at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:62)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace409007038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace409007038'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@aria-invalid=&apos;false&apos; and @type=&apos;text&apos; and @maxlength=&apos;12&apos;]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1655740181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1655740181'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Continue&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7276b672e560d37fcef3c4506bb7aeeb, findElement {using=xpath, value=//button[text()=&apos;Continue&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59449}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59449/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7276b672e560d37fcef3c4506bb7aeeb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.TechStalWarts.pageObjects.BasePage.sendKeys(BasePage.java:33)
-	at com.JarvisPortfolio.E_Sign.enterPAN(E_Sign.java:57)
-	at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:63)
+	at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:44)
+	at com.JarvisPortfolio.SyncPortFolio.clickOnContinue(SyncPortFolio.java:33)
+	at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,7 +158,7 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>23</td>
+<td>46</td>
 <td>com.TechStalWarts.testCase.TC_Protect@76a4ebf2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -142,9 +169,14 @@ Driver info: driver.version: RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TechStalWarts.testCase.TC_Protect.tc_pro_001()'><b>tc_pro_001</b><br>Test class: com.TechStalWarts.testCase.TC_Protect<br>Test method: Login<br>Parameters: {password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav1993+14@gmail.com}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_001(java.util.Map,java.lang.reflect.Method)</td>
+<td title='com.TechStalWarts.testCase.TC_Protect.tc_pro_001()'><b>tc_pro_001</b><br>Test class: com.TechStalWarts.testCase.TC_Protect<br>Test method: Login<br>Parameters: {password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav1993+15@gmail.com}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_001(java.util.Map,java.lang.reflect.Method)</td>
 <td></td>
 <td>5</td>
+<td>com.TechStalWarts.testCase.TC_Protect@76a4ebf2</td></tr>
+<tr>
+<td title='com.TechStalWarts.testCase.TC_Protect.tc_pro_003()'><b>tc_pro_003</b><br>Test class: com.TechStalWarts.testCase.TC_Protect<br>Test method: Sync Your Portfolio<br>Parameters: {password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_003(java.util.Map,java.lang.reflect.Method)</td>
+<td></td>
+<td>19</td>
 <td>com.TechStalWarts.testCase.TC_Protect@76a4ebf2</td></tr>
 </table><p>
 </body>
