@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="2" total="6" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-23T15:25:54 IST" name="InterviewTask_techStalWarts" finished-at="2023-05-23T15:27:06 IST" duration-ms="72188">
+  <suite started-at="2023-05-23T16:44:50 IST" name="InterviewTask_techStalWarts" finished-at="2023-05-23T16:47:13 IST" duration-ms="143075">
     <groups>
     </groups>
-    <test started-at="2023-05-23T15:25:54 IST" name="Interview Test" finished-at="2023-05-23T15:27:06 IST" duration-ms="72188">
+    <test started-at="2023-05-23T16:44:50 IST" name="Interview Test" finished-at="2023-05-23T16:47:13 IST" duration-ms="143075">
       <class name="com.TechStalWarts.testCase.TC_portFolioGeneration">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T15:25:44 IST" name="setup" finished-at="2023-05-23T15:25:54 IST" duration-ms="9390" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T16:44:40 IST" name="setup" finished-at="2023-05-23T16:44:50 IST" duration-ms="10151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T15:27:06 IST" name="tearDown" finished-at="2023-05-23T15:27:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T16:47:13 IST" name="tearDown" finished-at="2023-05-23T16:47:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.TechStalWarts.testCase.TC_portFolioGeneration -->
       <class name="com.TechStalWarts.testCase.TC_Protect">
-        <test-method is-config="true" signature="pageObjects()[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T15:25:55 IST" name="pageObjects" finished-at="2023-05-23T15:25:55 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="pageObjects()[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:44:51 IST" name="pageObjects" finished-at="2023-05-23T16:44:51 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObjects -->
-        <test-method signature="tc_pro_001(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T15:25:55 IST" name="tc_pro_001" description="Login" data-provider="getData" finished-at="2023-05-23T15:26:00 IST" duration-ms="5244" status="PASS">
+        <test-method signature="tc_pro_001(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:44:51 IST" name="tc_pro_001" description="Login" data-provider="getData" finished-at="2023-05-23T16:44:59 IST" duration-ms="7926" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav1993+15@gmail.com}]]>
+                <![CDATA[{password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav1993+19@gmail.com}]]>
               </value>
             </param>
             <param index="1">
@@ -37,7 +37,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_pro_001 -->
-        <test-method signature="tc_pro_003(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T15:26:00 IST" name="tc_pro_003" description="Sync Your Portfolio" data-provider="getData" finished-at="2023-05-23T15:26:20 IST" duration-ms="19718" status="PASS">
+        <test-method signature="tc_pro_002(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:44:59 IST" name="tc_pro_002" description="Risk Assessment" data-provider="getData" finished-at="2023-05-23T16:45:42 IST" duration-ms="43277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=, DOB=, AdharCardNum=, testname=tc_pro_002, PAN=, execute=yes, username=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.TechStalWarts.testCase.TC_Protect.tc_pro_002(java.util.Map,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_pro_002 -->
+        <test-method signature="tc_pro_003(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:45:42 IST" name="tc_pro_003" description="Sync Your Portfolio" data-provider="getData" finished-at="2023-05-23T16:46:33 IST" duration-ms="50497" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_pro_003 -->
-        <test-method signature="tc_pro_004(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T15:26:20 IST" name="tc_pro_004" description="CKYC" data-provider="getData" finished-at="2023-05-23T15:27:06 IST" duration-ms="46119" status="FAIL">
+        <test-method signature="tc_pro_004(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:46:33 IST" name="tc_pro_004" description="CKYC" data-provider="getData" finished-at="2023-05-23T16:47:13 IST" duration-ms="40125" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -68,26 +84,26 @@
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Continue']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div"}
   (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7276b672e560d37fcef3c4506bb7aeeb, findElement {using=xpath, value=//button[text()='Continue']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59449}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59449/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7276b672e560d37fcef3c4506bb7aeeb]]>
+Command: [519c92df253166a676a8602821a03a5d, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61681/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 519c92df253166a676a8602821a03a5d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Continue']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div"}
   (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7276b672e560d37fcef3c4506bb7aeeb, findElement {using=xpath, value=//button[text()='Continue']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59449}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59449/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7276b672e560d37fcef3c4506bb7aeeb
+Command: [519c92df253166a676a8602821a03a5d, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61681/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 519c92df253166a676a8602821a03a5d
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -104,9 +120,9 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:44)
-at com.JarvisPortfolio.SyncPortFolio.clickOnContinue(SyncPortFolio.java:33)
-at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:62)
+at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:43)
+at com.JarvisPortfolio.E_Sign.clickOnPlan(E_Sign.java:86)
+at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:54)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
