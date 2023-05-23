@@ -17,6 +17,8 @@ public class Personalisedportfolio extends BasePage {
 	private final By iAgree=By.xpath("//button[text()='I agree']");
 	private final By UPI=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/span/input");
 	private final By UPIProtect=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div/div[1]/span/input");
+	private final By UPIOSck=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/span");
+
 	
 	private final By enterUPIId=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[3]/div/div/div/input");
 	private final By enterUPIIDProtect=By.xpath("//input[@type='text' and @aria-invalid='false']");
@@ -35,6 +37,11 @@ public class Personalisedportfolio extends BasePage {
 	private final By page=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[5]");
 	private final By clickContinue=By.xpath("//button[text()='Continue']");
 
+	
+	public Personalisedportfolio clickOnUPIOnesTock() {
+		clicK(UPIOSck);
+		return this;
+	}
 	
 	public Personalisedportfolio enterUPIIDProtect(String value) {
 		sendDocs(enterUPIIDProtect, value);

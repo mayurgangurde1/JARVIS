@@ -1,109 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="3" failed="1" skipped="0">
+<testng-results ignored="2" total="7" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-23T16:44:50 IST" name="InterviewTask_techStalWarts" finished-at="2023-05-23T16:47:13 IST" duration-ms="143075">
+  <suite started-at="2023-05-23T17:04:09 IST" name="InterviewTask_techStalWarts" finished-at="2023-05-23T17:07:25 IST" duration-ms="196221">
     <groups>
     </groups>
-    <test started-at="2023-05-23T16:44:50 IST" name="Interview Test" finished-at="2023-05-23T16:47:13 IST" duration-ms="143075">
+    <test started-at="2023-05-23T17:04:09 IST" name="Interview Test" finished-at="2023-05-23T17:07:25 IST" duration-ms="196221">
       <class name="com.TechStalWarts.testCase.TC_portFolioGeneration">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T16:44:40 IST" name="setup" finished-at="2023-05-23T16:44:50 IST" duration-ms="10151" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T17:03:58 IST" name="setup" finished-at="2023-05-23T17:04:09 IST" duration-ms="10071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T16:47:13 IST" name="tearDown" finished-at="2023-05-23T16:47:13 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.TechStalWarts.testCase.TC_portFolioGeneration -->
-      <class name="com.TechStalWarts.testCase.TC_Protect">
-        <test-method is-config="true" signature="pageObjects()[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:44:51 IST" name="pageObjects" finished-at="2023-05-23T16:44:51 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="pageObjects()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T17:04:10 IST" name="pageObjects" finished-at="2023-05-23T17:04:10 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObjects -->
-        <test-method signature="tc_pro_001(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:44:51 IST" name="tc_pro_001" description="Login" data-provider="getData" finished-at="2023-05-23T16:44:59 IST" duration-ms="7926" status="PASS">
+        <test-method signature="tc_001(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T17:04:10 IST" name="tc_001" description="Login" data-provider="getData" finished-at="2023-05-23T17:04:17 IST" duration-ms="7792" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav1993+19@gmail.com}]]>
+                <![CDATA[{password=123, DOB=, AdharCardNum=, testname=tc_001, PAN=, execute=yes, username=kiran.jadhav1993+19@gmail.com}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.TechStalWarts.testCase.TC_Protect.tc_pro_001(java.util.Map,java.lang.reflect.Method)]]>
+                <![CDATA[public void com.TechStalWarts.testCase.TC_portFolioGeneration.tc_001(java.util.Map,java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_pro_001 -->
-        <test-method signature="tc_pro_002(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:44:59 IST" name="tc_pro_002" description="Risk Assessment" data-provider="getData" finished-at="2023-05-23T16:45:42 IST" duration-ms="43277" status="PASS">
+        </test-method> <!-- tc_001 -->
+        <test-method signature="tc_003(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T17:04:17 IST" name="tc_003" description="Investment Horizon" data-provider="getData" finished-at="2023-05-23T17:05:54 IST" duration-ms="96496" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=, DOB=, AdharCardNum=, testname=tc_pro_002, PAN=, execute=yes, username=}]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.TechStalWarts.testCase.TC_Protect.tc_pro_002(java.util.Map,java.lang.reflect.Method)]]>
+                <![CDATA[{password=, DOB=, AdharCardNum=, testname=tc_003, PAN=, execute=yes, username=}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[text()='Unlock now'])[1] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf9f7404e4072c1813efc125704a6591]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[text()='Unlock now'])[1] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf9f7404e4072c1813efc125704a6591
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:127)
+at com.JarvisPortfolio.InvestmentHorizon.clickOnUnlockNow(InvestmentHorizon.java:31)
+at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_003(TC_portFolioGeneration.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_pro_002 -->
-        <test-method signature="tc_pro_003(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:45:42 IST" name="tc_pro_003" description="Sync Your Portfolio" data-provider="getData" finished-at="2023-05-23T16:46:33 IST" duration-ms="50497" status="PASS">
+        </test-method> <!-- tc_003 -->
+        <test-method signature="tc_004(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T17:05:54 IST" name="tc_004" description="Personalise portfolio" data-provider="getData" finished-at="2023-05-23T17:06:55 IST" duration-ms="60663" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.TechStalWarts.testCase.TC_Protect.tc_pro_003(java.util.Map,java.lang.reflect.Method)]]>
+                <![CDATA[{password=, DOB=, AdharCardNum=, testname=tc_004, PAN=, execute=yes, username=}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//div[text()='Unlock now'])[1] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf9f7404e4072c1813efc125704a6591]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[text()='Unlock now'])[1] (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf9f7404e4072c1813efc125704a6591
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:127)
+at com.JarvisPortfolio.InvestmentHorizon.clickOnUnlockNow(InvestmentHorizon.java:31)
+at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_004(TC_portFolioGeneration.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_pro_003 -->
-        <test-method signature="tc_pro_004(java.util.Map,java.lang.reflect.Method)[pri:0, instance:com.TechStalWarts.testCase.TC_Protect@76a4ebf2]" started-at="2023-05-23T16:46:33 IST" name="tc_pro_004" description="CKYC" data-provider="getData" finished-at="2023-05-23T16:47:13 IST" duration-ms="40125" status="FAIL">
+        </test-method> <!-- tc_004 -->
+        <test-method signature="tc_005(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T17:06:55 IST" name="tc_005" description="CKYC" data-provider="getData" finished-at="2023-05-23T17:07:25 IST" duration-ms="30100" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=, DOB=12021993, AdharCardNum=, testname=tc_pro_004, PAN=BAYPJ2260G, execute=yes, username=}]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.TechStalWarts.testCase.TC_Protect.tc_pro_004(java.util.Map,java.lang.reflect.Method)]]>
+                <![CDATA[{password=, DOB=12021993, AdharCardNum=, testname=tc_005, PAN=BAYPJ2260G, execute=yes, username=}]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input"}
   (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [519c92df253166a676a8602821a03a5d, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61681/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 519c92df253166a676a8602821a03a5d]]>
+Command: [bf9f7404e4072c1813efc125704a6591, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf9f7404e4072c1813efc125704a6591]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input"}
   (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [519c92df253166a676a8602821a03a5d, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:61681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61681/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 519c92df253166a676a8602821a03a5d
+Command: [bf9f7404e4072c1813efc125704a6591, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf9f7404e4072c1813efc125704a6591
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -120,9 +203,9 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:43)
-at com.JarvisPortfolio.E_Sign.clickOnPlan(E_Sign.java:86)
-at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:54)
+at com.TechStalWarts.pageObjects.BasePage.sendKeys(BasePage.java:32)
+at com.JarvisPortfolio.CKYC.enterPANnum(CKYC.java:33)
+at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_005(TC_portFolioGeneration.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -156,8 +239,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_pro_004 -->
-      </class> <!-- com.TechStalWarts.testCase.TC_Protect -->
+        </test-method> <!-- tc_005 -->
+        <test-method signature="tc_006(java.util.Map)[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T17:07:25 IST" name="tc_006" description="Client Agreement" data-provider="getData" finished-at="2023-05-23T17:07:25 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=, DOB=, AdharCardNum=, testname=tc_006, PAN=, execute=yes, username=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_006 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380]" started-at="2023-05-23T17:07:25 IST" name="tearDown" finished-at="2023-05-23T17:07:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TechStalWarts.testCase.TC_portFolioGeneration -->
     </test> <!-- Interview Test -->
   </suite> <!-- InterviewTask_techStalWarts -->
 </testng-results>
