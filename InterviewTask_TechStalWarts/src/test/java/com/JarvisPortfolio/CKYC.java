@@ -11,6 +11,9 @@ public class CKYC extends BasePage{
 		super(driver);
 	}
 
+	
+	
+	
 
 	private final By pan=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input");
 	private final By dob=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[5]/div/input");
