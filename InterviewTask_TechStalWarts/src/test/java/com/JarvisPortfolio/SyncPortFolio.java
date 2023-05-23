@@ -1,9 +1,7 @@
 package com.JarvisPortfolio;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import com.TechStalWarts.constants.FrameWorkConstants;
 import com.TechStalWarts.pageObjects.BasePage;
@@ -25,7 +23,7 @@ public class SyncPortFolio extends BasePage{
 	private final By clientID=By.xpath("(//input[@type='text'])[4]");
 	private final By fileSubmit=By.xpath("//button[text()='Submit']");
 	private final By goTO=By.xpath("//button[text()='Go to Portfolio']");
-	private final By continuee=By.xpath("//button[text()='Continue']");
+	private final By continuee=By.xpath("//button[@tabindex='0' and @type='button']");
 
 
 
