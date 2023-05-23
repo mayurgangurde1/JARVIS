@@ -1,12 +1,14 @@
 package com.TechStalWarts.pageObjects;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -14,11 +16,15 @@ import org.testng.Assert;
 
 
 public class BasePage extends BaseClass {
-	WebDriverWait wait=null;
 
 	public  WebDriver driver;
 	public BasePage( WebDriver driver) {
 		this.driver=driver;
+	}
+
+	protected void sendDocs(By by, String value) {
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(by)).sendKeys(value);;
 	}
 
 
@@ -33,10 +39,8 @@ public class BasePage extends BaseClass {
 
 	protected void clicK(By by) {
 		//	driver.findElement(by).click();		
-		
-		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
-		wait.until(ExpectedConditions.elementToBeClickable(by));
-		WebElement l = driver.findElement(by);
+
+		WebElement l=driver.findElement(by);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", l);
 		sleepOneSec();
@@ -119,14 +123,26 @@ public class BasePage extends BaseClass {
 	}
 
 	public void clickWithCondition(By by) {
-		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
-		wait.until(ExpectedConditions.elementToBeClickable(by));
-		
+		WebDriverWait 	wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 		WebElement l=driver.findElement(by);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", l);
 		sleepOneSec();
 
+	}
+	
+	
+	public void selectFromDropDown(String value , By by) {
+		driver.findElement(by).click();
+		List<WebElement> list=driver.findElements(by);
+		System.out.println(list.toString());
+		for(WebElement ele: list) {
+			if(ele.getText().equalsIgnoreCase(value)) {
+				ele.click();
+			}
+			
+		}	
 	}
 }
 

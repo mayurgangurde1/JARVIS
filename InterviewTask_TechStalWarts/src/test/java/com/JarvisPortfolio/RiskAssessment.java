@@ -1,7 +1,9 @@
 package com.JarvisPortfolio;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.TechStalWarts.pageObjects.BasePage;
 
@@ -25,7 +27,7 @@ public class RiskAssessment extends BasePage {
 	private final By submit=By.xpath("//button[text()='Submit my responses']");
 	private final By confirmSubmit=By.xpath("(//button[text()='Submit my responses'])[2]");
 	private final By checkBox=By.xpath("//input[@type='checkbox']");
-	private final By confirmRiskAss=By.xpath("//button[text()='I confirm my risk profile']");
+	private final By confirmRiskAss=By.xpath("//button[text()='I Confirm my risk profile']");
 	
 
 
@@ -77,7 +79,10 @@ public class RiskAssessment extends BasePage {
 		return this;
 	}
 	public RiskAssessment clickOnCheckBox() {
-		clickWithCondition(checkBox);
+//		WebElement m=driver.findElement(checkBox);
+//		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", m);
+	clicK(checkBox);
+	//	driver.findElement(checkBox).click();
 		return this;
 	}
 	public RiskAssessment confirmSubmit() {

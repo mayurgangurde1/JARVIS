@@ -33,14 +33,17 @@ public class TC_Protect extends BaseClass1 {
 		scrollDown();
 		sleep();
 		scrollDown();
-		sleep();
+		sleep();sleep();
 		riskass.clickOnCheckBox().clickOnConfirmRiskAss();sleep();
 	}
 	
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_pro_003(Map<String , String> data,Method method) {
-		new SyncPortFolio(driver).clickOnUploadExcel().browsFile().clickOnSubmit();
+		
+		new SyncPortFolio(driver).clickOnCompleteOnboarding().clickOnUploadExcel().
+		browsFile().enterPortFolioName().enterClientID().selectBrokerName()
+		.clickOnFinalSubmit();
 		
 	
 	}
