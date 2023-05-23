@@ -31,6 +31,23 @@ public class TC_OneStock extends BaseClass1{
 		riskass.clickOnCheckBox().clickOnConfirmRiskAss();sleep();
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_os_003(Map<String , String> data,Method method) {
 		new OneStock(driver).clickOnPay().clickOnAgree();sleep();
@@ -49,7 +66,7 @@ public class TC_OneStock extends BaseClass1{
 		new E_Sign(driver).clickOnProceedToClientAgreemtn();sleep();sleep();
 		new E_Sign(driver).clickOnconfirmation().clickOnAgree().
 		clickOnProceed().clickOnSignNow();
-		
+
 	}
-	
+
 }
