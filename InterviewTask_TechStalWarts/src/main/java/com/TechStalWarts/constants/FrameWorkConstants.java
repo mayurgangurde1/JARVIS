@@ -19,10 +19,21 @@ public class FrameWorkConstants {
 	private static final String upiID="kiran@paytm";
 	private static final String upiIDrazorPay="success@razorpay";
 	private static final String filePath=FrameWorkConstants.getResourcepath()+"/excel/PortfolioSyncUpload.xlsx";
+	private static final String portFolioName="Kiran Jadhav";
+	private static final String clientID="1234";
+	private static final String brokerName="Zerodha";
 
 
 
-
+	public static String getBrokerName() {
+		return brokerName;
+	}
+	public static String getClientID() {
+		return clientID;
+	}
+	public static String getPortfolioName() {
+		return portFolioName;
+	}
 	public static String getFilePath() {
 		return filePath;
 	}

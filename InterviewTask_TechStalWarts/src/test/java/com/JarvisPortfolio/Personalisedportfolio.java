@@ -16,9 +16,15 @@ public class Personalisedportfolio extends BasePage {
 	private final By pay=By.xpath("//button[text()='Pay ']");
 	private final By iAgree=By.xpath("//button[text()='I agree']");
 	private final By UPI=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/span/input");
+	private final By UPIProtect=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div/div[1]/span/input");
+	
 	private final By enterUPIId=By.xpath("/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[3]/div/div/div/input");
+	private final By enterUPIIDProtect=By.xpath("//input[@type='text' and @aria-invalid='false']");
 	private final By verify=By.xpath("//button[text()='Verify']");
 	private final By payWithPaymentMode=By.xpath("(//button[text()='Pay '])[1]");
+	private final By payWithPaymentModeProtect=By.xpath("(//button[text()='Pay '])[2]");
+	
+			
 	private final By payUsingUPI=By.xpath("//button[text()='Pay using UPI / QR']");
 	private final By frame=By.xpath("/html/body/div[4]/iframe");
 	private final By enterUPIID=By.xpath("//*[@id='vpa-upi']");
@@ -29,6 +35,15 @@ public class Personalisedportfolio extends BasePage {
 	private final By page=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[5]");
 	private final By clickContinue=By.xpath("//button[text()='Continue']");
 
+	
+	public Personalisedportfolio enterUPIIDProtect(String value) {
+		sendDocs(enterUPIIDProtect, value);
+		return this;
+	}
+	public Personalisedportfolio clickOnpayWithPaymentModeProtce() {
+		clicK(payWithPaymentModeProtect);
+		return this;
+	}
 
 	public Personalisedportfolio clickOnContinue() {
 		clickWithCondition(clickContinue);
@@ -80,6 +95,10 @@ public class Personalisedportfolio extends BasePage {
 
 	public Personalisedportfolio clickonUPI() {
 		clicK(UPI);
+		return this;
+	}
+	public Personalisedportfolio clickonUPIProtect() {
+		clicK(UPIProtect);
 		return this;
 	}
 

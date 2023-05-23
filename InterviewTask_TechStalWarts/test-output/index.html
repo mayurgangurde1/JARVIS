@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,12 +104,7 @@
                     <div class="method-list-content failed suite-InterviewTask_techStalWarts">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-InterviewTask_techStalWarts" title="com.TechStalWarts.testCase.TC_Protect" class="method navigator-link" hash-for-method="tc_pro_002({password=, DOB=, AdharCardNum=, testname=tc_pro_002, PAN=, execute=yes, username=}, public void com...)">tc_pro_002({password=, DOB=, AdharCardNum=, testname=tc_pro_002, PAN=, execute=yes, username=}, public void com...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-InterviewTask_techStalWarts" title="com.TechStalWarts.testCase.TC_Protect" class="method navigator-link" hash-for-method="tc_pro_003({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com...)">tc_pro_003({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-InterviewTask_techStalWarts" title="com.TechStalWarts.testCase.TC_Protect" class="method navigator-link" hash-for-method="tc_pro_004({password=, DOB=12021993, AdharCardNum=, testname=tc_pro_004, PAN=BAYPJ2260G, execute=yes, username=...)">tc_pro_004({password=, DOB=12021993, AdharCardNum=, testname=tc_pro_004, PAN=BAYPJ2260G, execute=yes, username=...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-InterviewTask_techStalWarts -->
@@ -124,6 +119,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-InterviewTask_techStalWarts" title="com.TechStalWarts.testCase.TC_Protect" class="method navigator-link" hash-for-method="tc_pro_001({password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav199...)">tc_pro_001({password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav199...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-InterviewTask_techStalWarts" title="com.TechStalWarts.testCase.TC_Protect" class="method navigator-link" hash-for-method="tc_pro_003({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com...)">tc_pro_003({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-InterviewTask_techStalWarts -->
@@ -146,50 +146,38 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_pro_002({password=, DOB=, AdharCardNum=, testname=tc_pro_002, PAN=, execute=yes, username=}, public void com...)">
-                  </a> <!-- tc_pro_002({password=, DOB=, AdharCardNum=, testname=tc_pro_002, PAN=, execute=yes, username=}, public void com...) -->
-                  <span class="method-name">tc_pro_002</span>
-                  <span class="parameters">({password=, DOB=, AdharCardNum=, testname=tc_pro_002, PAN=, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_002(java.util.Map,java.lang.reflect.Method))</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@type=&apos;checkbox&apos;] (tried for 50 second(s) with 500 milliseconds interval)
+                  <a name="tc_pro_004({password=, DOB=12021993, AdharCardNum=, testname=tc_pro_004, PAN=BAYPJ2260G, execute=yes, username=...)">
+                  </a> <!-- tc_pro_004({password=, DOB=12021993, AdharCardNum=, testname=tc_pro_004, PAN=BAYPJ2260G, execute=yes, username=...) -->
+                  <span class="method-name">tc_pro_004</span>
+                  <span class="parameters">({password=, DOB=12021993, AdharCardNum=, testname=tc_pro_004, PAN=BAYPJ2260G, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_004(java.util.Map,java.lang.reflect.Method))</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Continue&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:65450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65450/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 94485f01a4c898340beb9b1e6e9eef45
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:123)
-	at com.JarvisPortfolio.RiskAssessment.clickOnCheckBox(RiskAssessment.java:80)
-	at com.TechStalWarts.testCase.TC_Protect.tc_pro_002(TC_Protect.java:37)
+Command: [7276b672e560d37fcef3c4506bb7aeeb, findElement {using=xpath, value=//button[text()=&apos;Continue&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59449}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59449/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7276b672e560d37fcef3c4506bb7aeeb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:44)
+	at com.JarvisPortfolio.SyncPortFolio.clickOnContinue(SyncPortFolio.java:33)
+	at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:62)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Risk Assessment)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_pro_003({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com...)">
-                  </a> <!-- tc_pro_003({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com...) -->
-                  <span class="method-name">tc_pro_003</span>
-                  <span class="parameters">({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_003(java.util.Map,java.lang.reflect.Method))</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//button[text()=&apos;Upload Excel&apos;])[2] (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:65450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65450/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 94485f01a4c898340beb9b1e6e9eef45
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:123)
-	at com.JarvisPortfolio.SyncPortFolio.clickOnUploadExcel(SyncPortFolio.java:30)
-	at com.TechStalWarts.testCase.TC_Protect.tc_pro_003(TC_Protect.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Sync Your Portfolio)                  </em>
+(CKYC)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,9 +193,19 @@ Session ID: 94485f01a4c898340beb9b1e6e9eef45
                   <a name="tc_pro_001({password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav199...)">
                   </a> <!-- tc_pro_001({password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav199...) -->
                   <span class="method-name">tc_pro_001</span>
-                  <span class="parameters">({password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav1993+14@gmail.com}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_001(java.util.Map,java.lang.reflect.Method))</span>
+                  <span class="parameters">({password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav1993+15@gmail.com}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_001(java.util.Map,java.lang.reflect.Method))</span>
                   <em>
 (Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_pro_003({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com...)">
+                  </a> <!-- tc_pro_003({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com...) -->
+                  <span class="method-name">tc_pro_003</span>
+                  <span class="parameters">({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_003(java.util.Map,java.lang.reflect.Method))</span>
+                  <em>
+(Sync Your Portfolio)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -272,22 +270,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc_pro_002')
+data.setCell(0, 1, 'tc_pro_004')
 data.setCell(0, 2, 'com.TechStalWarts.testCase.TC_Protect')
-data.setCell(0, 3, 98512);
+data.setCell(0, 3, 46119);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'tc_pro_003')
 data.setCell(1, 2, 'com.TechStalWarts.testCase.TC_Protect')
-data.setCell(1, 3, 60589);
+data.setCell(1, 3, 19718);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'tc_pro_001')
 data.setCell(2, 2, 'com.TechStalWarts.testCase.TC_Protect')
-data.setCell(2, 3, 4906);
+data.setCell(2, 3, 5244);
 window.suiteTableData['InterviewTask_techStalWarts']= { tableData: data, tableDiv: 'times-div-InterviewTask_techStalWarts'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-InterviewTask_techStalWarts">
               </div> <!-- times-div-InterviewTask_techStalWarts -->
             </div> <!-- times-div -->
@@ -332,30 +330,28 @@ return data;
               <div class="chronological-class-name">com.TechStalWarts.testCase.TC_Protect</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">pageObjects</span>
-                <span class="method-start">10745 ms</span>
+                <span class="method-start">10303 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">tc_pro_001({password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav199...)</span>
-                <span class="method-start">10839 ms</span>
+                <span class="method-start">10434 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tc_pro_002({password=, DOB=, AdharCardNum=, testname=tc_pro_002, PAN=, execute=yes, username=}, public void com...)</span>
-                <span class="method-start">15800 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tc_pro_003({password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com...)</span>
-                <span class="method-start">114321 ms</span>
+                <span class="method-start">15724 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc_pro_004({password=, DOB=12021993, AdharCardNum=, testname=tc_pro_004, PAN=BAYPJ2260G, execute=yes, username=...)</span>
+                <span class="method-start">35452 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.TechStalWarts.testCase.TC_portFolioGeneration</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">175335 ms</span>
+                <span class="method-start">81936 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

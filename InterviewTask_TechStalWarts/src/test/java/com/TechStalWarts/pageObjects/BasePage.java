@@ -4,8 +4,10 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -14,11 +16,15 @@ import org.testng.Assert;
 
 
 public class BasePage extends BaseClass {
-	WebDriverWait wait=null;
 
 	public  WebDriver driver;
 	public BasePage( WebDriver driver) {
 		this.driver=driver;
+	}
+
+	protected void sendDocs(By by, String value) {
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(by)).sendKeys(value);;
 	}
 
 
@@ -33,10 +39,8 @@ public class BasePage extends BaseClass {
 
 	protected void clicK(By by) {
 		//	driver.findElement(by).click();		
-		
-		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
-		wait.until(ExpectedConditions.elementToBeClickable(by));
-		WebElement l = driver.findElement(by);
+
+		WebElement l=driver.findElement(by);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", l);
 		sleepOneSec();
@@ -119,14 +123,28 @@ public class BasePage extends BaseClass {
 	}
 
 	public void clickWithCondition(By by) {
-		wait=new WebDriverWait(driver, Duration.ofSeconds(50));
-		wait.until(ExpectedConditions.elementToBeClickable(by));
-		
+		WebDriverWait 	wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 		WebElement l=driver.findElement(by);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", l);
 		sleepOneSec();
 
+	}
+	
+	
+	public void selectFromDropDown( By by) {
+		WebElement ele= driver.findElement(by);
+		ele.click();
+		ele.sendKeys(Keys.DOWN,Keys.ENTER);
+		//	selectFromDropDown(FrameWorkConstants.getBrokerName(), broker);
+		
+	}
+	
+	
+	public void actionSendKeys(WebElement ele, String value) {
+		Actions action=new Actions(driver);
+		action.sendKeys(ele	, value);
 	}
 }
 
