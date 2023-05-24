@@ -31,22 +31,7 @@ public class TC_OneStock extends BaseClass1{
 		riskass.clickOnCheckBox().clickOnConfirmRiskAss();sleep();
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_os_003(Map<String , String> data,Method method) {

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Interview Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 23 17:04:09 IST 2023</td>
+<td>Started on:</td><td>Wed May 24 16:03:57 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>196 seconds (196221 ms)</td>
+<tr><td>Total time:</td><td>183 seconds (183335 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TechStalWarts.testCase.TC_portFolioGeneration.tc_005()'><b>tc_005</b><br>Test class: com.TechStalWarts.testCase.TC_portFolioGeneration<br>Test method: CKYC<br>Parameters: {password=, DOB=12021993, AdharCardNum=, testname=tc_005, PAN=BAYPJ2260G, execute=yes, username=}</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input&quot;}
+<td title='com.TechStalWarts.testCase.TC_Protect.tc_pro_004()'><b>tc_pro_004</b><br>Test class: com.TechStalWarts.testCase.TC_Protect<br>Test method: CKYC<br>Parameters: {password=, DOB=12021993, AdharCardNum=, testname=tc_pro_004, PAN=BAYPJ2260G, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_004(java.util.Map,java.lang.reflect.Method)</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Complete onboarding&apos;]&quot;}
   (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf9f7404e4072c1813efc125704a6591, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf9f7404e4072c1813efc125704a6591
+Command: [f0bd2e56eee4ad01f1e77ec74fe7fcf5, findElement {using=xpath, value=//button[text()=&apos;Complete onboarding&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60304}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60304/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0bd2e56eee4ad01f1e77ec74fe7fcf5
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -96,20 +96,20 @@ Session ID: bf9f7404e4072c1813efc125704a6591
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.TechStalWarts.pageObjects.BasePage.sendKeys(BasePage.java:32)
-	at com.JarvisPortfolio.CKYC.enterPANnum(CKYC.java:33)
-	at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_005(TC_portFolioGeneration.java:60)
+	at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:49)
+	at com.JarvisPortfolio.E_Sign.clickOnOnboarding(E_Sign.java:34)
+	at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:64)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace752060661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace752060661'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input&quot;}
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace304193386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace304193386'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Complete onboarding&apos;]&quot;}
   (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf9f7404e4072c1813efc125704a6591, findElement {using=xpath, value=/html/body/div[1]/div/div[3]/div[2]/div[2]/div/div[2]/div/div[4]/div/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf9f7404e4072c1813efc125704a6591
+Command: [f0bd2e56eee4ad01f1e77ec74fe7fcf5, findElement {using=xpath, value=//button[text()=&apos;Complete onboarding&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60304}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60304/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0bd2e56eee4ad01f1e77ec74fe7fcf5
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -126,9 +126,9 @@ Session ID: bf9f7404e4072c1813efc125704a6591
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.TechStalWarts.pageObjects.BasePage.sendKeys(BasePage.java:32)
-	at com.JarvisPortfolio.CKYC.enterPANnum(CKYC.java:33)
-	at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_005(TC_portFolioGeneration.java:60)
+	at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:49)
+	at com.JarvisPortfolio.E_Sign.clickOnOnboarding(E_Sign.java:34)
+	at com.TechStalWarts.testCase.TC_Protect.tc_pro_004(TC_Protect.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,122 +158,8 @@ Session ID: bf9f7404e4072c1813efc125704a6591
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>30</td>
-<td>com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380</td></tr>
-<tr>
-<td title='com.TechStalWarts.testCase.TC_portFolioGeneration.tc_003()'><b>tc_003</b><br>Test class: com.TechStalWarts.testCase.TC_portFolioGeneration<br>Test method: Investment Horizon<br>Parameters: {password=, DOB=, AdharCardNum=, testname=tc_003, PAN=, execute=yes, username=}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[text()=&apos;Unlock now&apos;])[1] (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf9f7404e4072c1813efc125704a6591
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:127)
-	at com.JarvisPortfolio.InvestmentHorizon.clickOnUnlockNow(InvestmentHorizon.java:31)
-	at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_003(TC_portFolioGeneration.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1898629094", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1898629094'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[text()=&apos;Unlock now&apos;])[1] (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf9f7404e4072c1813efc125704a6591
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:127)
-	at com.JarvisPortfolio.InvestmentHorizon.clickOnUnlockNow(InvestmentHorizon.java:31)
-	at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_003(TC_portFolioGeneration.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>96</td>
-<td>com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380</td></tr>
-<tr>
-<td title='com.TechStalWarts.testCase.TC_portFolioGeneration.tc_004()'><b>tc_004</b><br>Test class: com.TechStalWarts.testCase.TC_portFolioGeneration<br>Test method: Personalise portfolio<br>Parameters: {password=, DOB=, AdharCardNum=, testname=tc_004, PAN=, execute=yes, username=}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[text()=&apos;Unlock now&apos;])[1] (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf9f7404e4072c1813efc125704a6591
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:127)
-	at com.JarvisPortfolio.InvestmentHorizon.clickOnUnlockNow(InvestmentHorizon.java:31)
-	at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_004(TC_portFolioGeneration.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace428468422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace428468422'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//div[text()=&apos;Unlock now&apos;])[1] (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62256/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf9f7404e4072c1813efc125704a6591
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:127)
-	at com.JarvisPortfolio.InvestmentHorizon.clickOnUnlockNow(InvestmentHorizon.java:31)
-	at com.TechStalWarts.testCase.TC_portFolioGeneration.tc_004(TC_portFolioGeneration.java:48)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>60</td>
-<td>com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380</td></tr>
+<td>70</td>
+<td>com.TechStalWarts.testCase.TC_Protect@76a4ebf2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -283,15 +169,20 @@ Session ID: bf9f7404e4072c1813efc125704a6591
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TechStalWarts.testCase.TC_portFolioGeneration.tc_001()'><b>tc_001</b><br>Test class: com.TechStalWarts.testCase.TC_portFolioGeneration<br>Test method: Login<br>Parameters: {password=123, DOB=, AdharCardNum=, testname=tc_001, PAN=, execute=yes, username=kiran.jadhav1993+19@gmail.com}, public void com.TechStalWarts.testCase.TC_portFolioGeneration.tc_001(java.util.Map,java.lang.reflect.Method)</td>
+<td title='com.TechStalWarts.testCase.TC_Protect.tc_pro_001()'><b>tc_pro_001</b><br>Test class: com.TechStalWarts.testCase.TC_Protect<br>Test method: Login<br>Parameters: {password=123, DOB=, AdharCardNum=, testname=tc_pro_001, PAN=, execute=yes, username=kiran.jadhav1993+26@gmail.com}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_001(java.util.Map,java.lang.reflect.Method)</td>
 <td></td>
-<td>7</td>
-<td>com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380</td></tr>
+<td>8</td>
+<td>com.TechStalWarts.testCase.TC_Protect@76a4ebf2</td></tr>
 <tr>
-<td title='com.TechStalWarts.testCase.TC_portFolioGeneration.tc_006()'><b>tc_006</b><br>Test class: com.TechStalWarts.testCase.TC_portFolioGeneration<br>Test method: Client Agreement<br>Parameters: {password=, DOB=, AdharCardNum=, testname=tc_006, PAN=, execute=yes, username=}</td>
+<td title='com.TechStalWarts.testCase.TC_Protect.tc_pro_002()'><b>tc_pro_002</b><br>Test class: com.TechStalWarts.testCase.TC_Protect<br>Test method: Risk Assessment<br>Parameters: {password=, DOB=, AdharCardNum=, testname=tc_pro_002, PAN=, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_002(java.util.Map,java.lang.reflect.Method)</td>
 <td></td>
-<td>0</td>
-<td>com.TechStalWarts.testCase.TC_portFolioGeneration@6e6f2380</td></tr>
+<td>49</td>
+<td>com.TechStalWarts.testCase.TC_Protect@76a4ebf2</td></tr>
+<tr>
+<td title='com.TechStalWarts.testCase.TC_Protect.tc_pro_003()'><b>tc_pro_003</b><br>Test class: com.TechStalWarts.testCase.TC_Protect<br>Test method: Sync Your Portfolio<br>Parameters: {password=, DOB=, AdharCardNum=, testname=tc_pro_003, PAN=, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_Protect.tc_pro_003(java.util.Map,java.lang.reflect.Method)</td>
+<td></td>
+<td>54</td>
+<td>com.TechStalWarts.testCase.TC_Protect@76a4ebf2</td></tr>
 </table><p>
 </body>
 </html>

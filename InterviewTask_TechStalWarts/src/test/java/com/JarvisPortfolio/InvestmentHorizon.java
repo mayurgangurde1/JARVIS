@@ -1,4 +1,4 @@
-package com.JarvisPortfolio;
+ package com.JarvisPortfolio;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ public class InvestmentHorizon extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-	private final By riskYears=By.xpath("(//button[@class='MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium  css-1sdf1vm'])[2]");
+	private final By riskYears=By.xpath("(//span[@class='MuiTouchRipple-root css-w0pj6f'])[6]");
 	private final By riskStratergy=By.xpath("//*[@id=\"root\"]/div/div[3]/div[2]/div[2]/div/div[2]/div[4]/div[2]/div[1]");
 	private final By submit=By.xpath("//button[text()='Submit my strategy']");
 	private final By onboarding=By.xpath("//button[text()='Complete onboarding']");

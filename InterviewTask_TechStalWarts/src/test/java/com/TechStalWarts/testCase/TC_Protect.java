@@ -28,8 +28,8 @@ public class TC_Protect extends BaseClass1 {
 
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
-	public void tc_pro_002(Map<String , String> data,Method method) {
-		riskass.clickOnInvestNowTwo(). clickOnStart().ProOneAns().ProTwoAns().ProThreeAns().ProFourAns()
+	public void tc_pro_002(Map<String , String> data,Method method) {//		riskass.clickOnInvestNowTwo(). 
+riskass. clickOnStart().ProOneAns().ProTwoAns().ProThreeAns().ProFourAns()
 		.ProFiveAns().ProSixAns().ProSevenAns().ProEightAns().ProNineAns().ProTenAns();
 		riskass.clickOnSubmit().confirmSubmit();scrollDown();sleep();sleep();
 		riskass.clickOnCheckBox().clickOnConfirmRiskAss();sleep();
@@ -38,20 +38,21 @@ public class TC_Protect extends BaseClass1 {
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_pro_003(Map<String , String> data,Method method) {
-		sleep();sleep();
-		new SyncPortFolio(driver). clickOnUploadExcel().
+		sleep();
+		
+		new SyncPortFolio(driver).clickOnCompleteOnboarding(). clickOnUploadExcel().
 		browsFile().enterPortFolioName().enterClientID().selectBrokerName()
 		.clickOnFinalSubmit();sleep();sleep();
 		new SyncPortFolio(driver). clickOnGotoPortFolio();sleep();sleep();
 		sleep();sleep();
-		new SyncPortFolio(driver).clickOnContinue();
+	
 	}
 
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_pro_004(Map<String , String> data,Method method) {
-		sleep();sleep();
-		new E_Sign(driver).clickOnPlan().clickOnContinue().clickOnPay().clickOnIagree();
+		sleep();
+		new E_Sign(driver).clickOnContinuee().clickOnPlan().clickOnContinue().clickOnPay().clickOnIagree();
 		new Personalisedportfolio(driver).clickonUPIProtect().enterUPIIDProtect(FrameWorkConstants.getUPIID()).clickOnverify();
 		scrollDown();
 		new Personalisedportfolio(driver).clickOnpayWithPaymentModeProtce().switchFrames();
@@ -59,10 +60,12 @@ public class TC_Protect extends BaseClass1 {
 		new Personalisedportfolio(driver). clickOnPayUsingUPI() .enterUPIID(FrameWorkConstants.getUPIIDRazorPay()).clickOnPayNow();
 		sleep();sleep(); sleep();
 		new SyncPortFolio(driver).clickOnContinue();
+		
 		sleep();
-		new E_Sign(driver).enterPAN(data.get("PAN")).enterDOB(data.get("DOB")).clickOnSubmit();
-		sleep();sleep();sleep();
-		new E_Sign(driver).clickOnProceedToClientAgreemtn();sleep();sleep();
+		new E_Sign(driver). enterPAN(data.get("PAN")).enterDOB(data.get("DOB")).clickOnSubmit();
+		sleep();sleep();
+		new E_Sign(driver).clickOnProceedToClientAgreemtn();
+		sleep();sleep();
 		new E_Sign(driver).clickOnconfirmation().clickOnAgree().clickOnProceed().clickOnSignNow();
 
 	}

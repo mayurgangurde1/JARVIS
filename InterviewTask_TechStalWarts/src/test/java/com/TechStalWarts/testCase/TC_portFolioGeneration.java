@@ -35,23 +35,24 @@ public class TC_portFolioGeneration extends BaseClass1{
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData")
 	public void tc_003(Map<String , String> data) {
-		new InvestmentHorizon(driver).clickOnCompleteOnboarding();
+		//new InvestmentHorizon(driver).clickOnCompleteOnboarding();
 		scrollDown();
 		sleep();
 		new InvestmentHorizon(driver).clickOnriskYears().clickOnriskStratergy().clickOnsubmit().clickOnMinBalance().clickOnContinue().clickOnConfirm();
+		sleep();sleep();sleep();
 		new InvestmentHorizon(driver).clickOnUnlockNow();
 	}
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData")
 	public void tc_004(Map<String , String> data) {
-		scrollDown();
-		new InvestmentHorizon(driver).clickOnUnlockNow();
+		scrollDown();sleep();sleep();
+		//new InvestmentHorizon(driver).clickOnUnlockNow();
 		new Personalisedportfolio(driver).clickOnPay().clickOnAgree().clickonUPI().typeUPIID(FrameWorkConstants.getUPIID()).clickOnverify();
 		scrollDown();
 		new Personalisedportfolio(driver).clickOnPayWithPaymentMode().switchFrames();
 		scrollDown();
 		new Personalisedportfolio(driver). clickOnPayUsingUPI() .enterUPIID(FrameWorkConstants.getUPIIDRazorPay()).clickOnPayNow().clickOnContinue().clickOnProceedToCKYC();
-
+		sleep();sleep();
 
 	}
 
