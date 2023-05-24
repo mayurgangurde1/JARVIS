@@ -51,15 +51,15 @@ riskass. clickOnStart().ProOneAns().ProTwoAns().ProThreeAns().ProFourAns()
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_pro_004(Map<String , String> data,Method method) {
-		sleep();
-		new E_Sign(driver).clickOnContinuee().clickOnPlan().clickOnContinue().clickOnPay().clickOnIagree();
-		new Personalisedportfolio(driver).clickonUPIProtect().enterUPIIDProtect(FrameWorkConstants.getUPIID()).clickOnverify();
-		scrollDown();
-		new Personalisedportfolio(driver).clickOnpayWithPaymentModeProtce().switchFrames();
-		scrollDown();
-		new Personalisedportfolio(driver). clickOnPayUsingUPI() .enterUPIID(FrameWorkConstants.getUPIIDRazorPay()).clickOnPayNow();
-		sleep();sleep(); sleep();
-		new SyncPortFolio(driver).clickOnContinue();
+//		sleep();
+//		new E_Sign(driver).clickOnContinuee().clickOnPlan().clickOnContinue().clickOnPay().clickOnIagree();
+//		new Personalisedportfolio(driver).clickonUPIProtect().enterUPIIDProtect(FrameWorkConstants.getUPIID()).clickOnverify();
+//		scrollDown();
+//		new Personalisedportfolio(driver).clickOnpayWithPaymentModeProtce().switchFrames();
+//		scrollDown();
+//		new Personalisedportfolio(driver). clickOnPayUsingUPI() .enterUPIID(FrameWorkConstants.getUPIIDRazorPay()).clickOnPayNow();
+//		sleep();sleep(); sleep();
+//		new SyncPortFolio(driver).clickOnContinue();
 		
 		sleep();
 		new E_Sign(driver). enterPAN(data.get("PAN")).enterDOB(data.get("DOB")).clickOnSubmit();

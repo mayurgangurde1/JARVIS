@@ -7,14 +7,14 @@
   </listeners>
   <test thread-count="5" name="Interview Test(failed)">
     <classes>
-      <class name="com.TechStalWarts.testCase.TC_Protect">
+      <class name="com.TechStalWarts.testCase.TC_OneStock">
         <methods>
+          <include name="tc_os_003" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="pageObjects"/>
           <include name="setup"/>
-          <include name="tc_pro_004" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.TechStalWarts.testCase.TC_Protect -->
+      </class> <!-- com.TechStalWarts.testCase.TC_OneStock -->
     </classes>
   </test> <!-- Interview Test(failed) -->
 </suite> <!-- Failed suite [InterviewTask_techStalWarts] -->

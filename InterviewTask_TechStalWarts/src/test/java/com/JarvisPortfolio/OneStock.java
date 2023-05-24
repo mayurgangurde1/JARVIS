@@ -12,8 +12,8 @@ public class OneStock extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 	
-	private final By pay=By.xpath("(//button[@tabindex='0' and @type='button'])[4]");
-	private final By iAgree=By.xpath("(//button[@tabindex='0' and @type='button'])[6]");
+	private final By pay=By.xpath("(//button[@tabindex='0' and @type='button'])[5]");
+	private final By iAgree=By.xpath("(//button[@tabindex='0' and @type='button'])[7]");
 	
 	
 	

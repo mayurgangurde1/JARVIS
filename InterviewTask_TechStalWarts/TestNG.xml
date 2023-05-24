@@ -13,6 +13,7 @@
           <class name="com.TechStalWarts.testCase.TC_LogInTest"/>   
           <class name="com.TechStalWarts.testCase.TC_portFolioGeneration"/>  
           <class name="com.TechStalWarts.testCase.TC_Protect"/> 
+           <class name="com.TechStalWarts.testCase.TC_OneStock"/>
       </classes>
   </test>
  
