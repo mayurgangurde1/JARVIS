@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TechStalWarts.testCase.TCportFolioGeneration">
+      <class name="com.TechStalWarts.testCase.TC_OneStock">
         <methods>
+          <include name="tc_os_003" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="pageObjects"/>
           <include name="setup"/>
-          <include name="ckyc" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.TechStalWarts.testCase.TCportFolioGeneration -->
+      </class> <!-- com.TechStalWarts.testCase.TC_OneStock -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

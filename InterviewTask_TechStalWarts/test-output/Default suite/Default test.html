@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 19 13:51:32 IST 2023</td>
+<td>Started on:</td><td>Wed May 24 17:36:07 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>66 seconds (66434 ms)</td>
+<tr><td>Total time:</td><td>57 seconds (57938 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TechStalWarts.testCase.TCportFolioGeneration.ckyc()'><b>ckyc</b><br>Test class: com.TechStalWarts.testCase.TCportFolioGeneration<br>Parameters: {password=, DOB=12021993, AdharCardNum=, testname=ckyc, PAN=BAYPJ2260G, execute=yes, username=}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()=&apos;Complete onboarding&apos;] (tried for 50 second(s) with 500 milliseconds interval)
+<td title='com.TechStalWarts.testCase.TC_OneStock.tc_os_003()'><b>tc_os_003</b><br>Test class: com.TechStalWarts.testCase.TC_OneStock<br>Parameters: {password=, DOB=12021993, AdharCardNum=, testname=tc_os_003, PAN=BAYPJ2260G, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_OneStock.tc_os_003(java.util.Map,java.lang.reflect.Method)</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //*[@id=&quot;root&quot;]/div/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/span/input
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58742/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 00d621a872e796952675250cf20166b8
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:118)
-	at com.JarvisPortfolio.InvestmentHorizon.clickOnCompleteOnboarding(InvestmentHorizon.java:53)
-	at com.TechStalWarts.testCase.TCportFolioGeneration.ckyc(TCportFolioGeneration.java:60)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:49)
+	at com.JarvisPortfolio.Personalisedportfolio.clickonUPI(Personalisedportfolio.java:104)
+	at com.TechStalWarts.testCase.TC_OneStock.tc_os_003(TC_OneStock.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,18 +116,19 @@ Session ID: 00d621a872e796952675250cf20166b8
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2137034273", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2137034273'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()=&apos;Complete onboarding&apos;] (tried for 50 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace658563862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace658563862'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //*[@id=&quot;root&quot;]/div/div[3]/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/span/input
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58742/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 00d621a872e796952675250cf20166b8
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.TechStalWarts.pageObjects.BasePage.clickWithCondition(BasePage.java:118)
-	at com.JarvisPortfolio.InvestmentHorizon.clickOnCompleteOnboarding(InvestmentHorizon.java:53)
-	at com.TechStalWarts.testCase.TCportFolioGeneration.ckyc(TCportFolioGeneration.java:60)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:49)
+	at com.JarvisPortfolio.Personalisedportfolio.clickonUPI(Personalisedportfolio.java:104)
+	at com.TechStalWarts.testCase.TC_OneStock.tc_os_003(TC_OneStock.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -156,8 +158,8 @@ Session ID: 00d621a872e796952675250cf20166b8
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>62</td>
-<td>com.TechStalWarts.testCase.TCportFolioGeneration@45099dd3</td></tr>
+<td>49</td>
+<td>com.TechStalWarts.testCase.TC_OneStock@2794eab6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -167,10 +169,10 @@ Session ID: 00d621a872e796952675250cf20166b8
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TechStalWarts.testCase.TCportFolioGeneration.doLogin()'><b>doLogin</b><br>Test class: com.TechStalWarts.testCase.TCportFolioGeneration<br>Parameters: {password=123, DOB=, AdharCardNum=, testname=doLogin, PAN=, execute=yes, username=kiran.jadhav1993+5@gmail.com}, public void com.TechStalWarts.testCase.TCportFolioGeneration.doLogin(java.util.Map,java.lang.reflect.Method)</td>
+<td title='com.TechStalWarts.testCase.TC_OneStock.tc_os_001()'><b>tc_os_001</b><br>Test class: com.TechStalWarts.testCase.TC_OneStock<br>Parameters: {password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=kiran.jadhav1993+29@gmail.com}, public void com.TechStalWarts.testCase.TC_OneStock.tc_os_001(java.util.Map,java.lang.reflect.Method)</td>
 <td></td>
-<td>2</td>
-<td>com.TechStalWarts.testCase.TCportFolioGeneration@45099dd3</td></tr>
+<td>7</td>
+<td>com.TechStalWarts.testCase.TC_OneStock@2794eab6</td></tr>
 </table><p>
 </body>
 </html>

@@ -39,11 +39,17 @@ public class BasePage extends BaseClass {
 
 	protected void clicK(By by) {
 		//	driver.findElement(by).click();		
-
-		WebElement l=driver.findElement(by);
-		JavascriptExecutor j = (JavascriptExecutor) driver;
-		j.executeScript("arguments[0].click();", l);
-		sleepOneSec();
+		try {
+			WebElement l=driver.findElement(by);
+			JavascriptExecutor j = (JavascriptExecutor) driver;
+			j.executeScript("arguments[0].click();", l);
+			sleepOneSec();}
+		catch(Exception e){
+			sleep();
+			driver.findElement(by).click();
+			System.out.println(e.getMessage());
+			
+		}
 	}
 
 
@@ -131,17 +137,17 @@ public class BasePage extends BaseClass {
 		sleepOneSec();
 
 	}
-	
-	
+
+
 	public void selectFromDropDown( By by) {
 		WebElement ele= driver.findElement(by);
 		ele.click();
 		ele.sendKeys(Keys.DOWN,Keys.ENTER);
 		//	selectFromDropDown(FrameWorkConstants.getBrokerName(), broker);
-		
+
 	}
-	
-	
+
+
 	public void actionSendKeys(WebElement ele, String value) {
 		Actions action=new Actions(driver);
 		action.sendKeys(ele	, value);

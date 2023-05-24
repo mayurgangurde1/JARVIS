@@ -25,32 +25,18 @@ public class TC_OneStock extends BaseClass1{
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_os_002(Map<String , String> data,Method method) {
-		riskass.clickOnInvestNowThree(). clickOnStart().ProOneAns().ProTwoAns().ProThreeAns().ProFourAns()
+		riskass. clickOnStart().ProOneAns().ProTwoAns().ProThreeAns().ProFourAns()
 		.ProFiveAns().ProSixAns().ProSevenAns().ProEightAns().ProNineAns().ProTenAns();
 		riskass.clickOnSubmit().confirmSubmit();scrollDown();sleep();sleep();
 		riskass.clickOnCheckBox().clickOnConfirmRiskAss();sleep();
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 
 	@Test(dataProviderClass = DataProviderUtils.class , dataProvider = "getData" )
 	public void tc_os_003(Map<String , String> data,Method method) {
-		new OneStock(driver).clickOnPay().clickOnAgree();sleep();
+		sleep();
+		new OneStock(driver).clickOnPay().clickOnAgree();
 		new Personalisedportfolio(driver).clickOnUPIOnesTock().
 		enterUPIIDProtect(FrameWorkConstants.getUPIID()).clickOnverify();
 		scrollDown();

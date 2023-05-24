@@ -2,6 +2,7 @@ package com.JarvisPortfolio;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import com.TechStalWarts.constants.FrameWorkConstants;
 import com.TechStalWarts.pageObjects.BasePage;
@@ -23,12 +24,14 @@ public class SyncPortFolio extends BasePage{
 	private final By clientID=By.xpath("(//input[@type='text'])[4]");
 	private final By fileSubmit=By.xpath("//button[text()='Submit']");
 	private final By goTO=By.xpath("//button[text()='Go to Portfolio']");
-	private final By continuee=By.xpath("//button[@tabindex='0' and @type='button']");
+	private final By continueePro=By.xpath("//button[@tabindex='0' and @type='button'] |  //button[text()='Continue'] | //button[@id='mui-63']");
 
 
 
 	public SyncPortFolio clickOnContinue() {
-		clicK(continuee);
+		sleep();
+		Actions ac=new Actions(driver);
+		ac.doubleClick(driver.findElement(continueePro)).perform();
 		return this;
 	}
 	public SyncPortFolio clickOnGotoPortFolio() {
