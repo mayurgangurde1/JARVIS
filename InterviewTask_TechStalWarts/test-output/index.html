@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-InterviewTask_techStalWarts" class="navigator-link ">
-                    <span>C:\Users\ts\techstalWartsProject\InterviewTask_TechStalWarts\TestNG.xml</span>
+                    <span>TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -118,7 +118,7 @@
                     <div class="method-list-content passed suite-InterviewTask_techStalWarts">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-InterviewTask_techStalWarts" title="com.TechStalWarts.testCase.TC_OneStock" class="method navigator-link" hash-for-method="tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=kiran.jadhav1993...)">tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=kiran.jadhav1993...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-InterviewTask_techStalWarts" title="com.TechStalWarts.testCase.TC_OneStock" class="method navigator-link" hash-for-method="tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=mayur.gangurde+1...)">tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=mayur.gangurde+1...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-InterviewTask_techStalWarts -->
@@ -145,19 +145,31 @@
                   </a> <!-- tc_os_003({password=, DOB=12021993, AdharCardNum=, testname=tc_os_003, PAN=BAYPJ2260G, execute=yes, username=}...) -->
                   <span class="method-name">tc_os_003</span>
                   <span class="parameters">({password=, DOB=12021993, AdharCardNum=, testname=tc_os_003, PAN=BAYPJ2260G, execute=yes, username=}, public void com.TechStalWarts.testCase.TC_OneStock.tc_os_003(java.util.Map,java.lang.reflect.Method))</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type=&apos;text&apos; and @aria-invalid=&apos;false&apos;] (tried for 50 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.126)
 Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-56-generic&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ts\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62464}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62464/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 73d963f79b8bd83fd1755e2a69395493
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.TechStalWarts.pageObjects.BasePage.sendDocs(BasePage.java:27)
-	at com.JarvisPortfolio.Personalisedportfolio.enterUPIIDProtect(Personalisedportfolio.java:47)
-	at com.TechStalWarts.testCase.TC_OneStock.tc_os_003(TC_OneStock.java:41)
+Command: [bc70ad504078c9dc88491efa73cbd509, findElement {using=xpath, value=(//button[@tabindex=&apos;0&apos; and @type=&apos;button&apos;])[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /tmp/.com.google.Chrome.vL6YDI}, goog:chromeOptions: {debuggerAddress: localhost:37939}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37939/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc70ad504078c9dc88491efa73cbd509
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.TechStalWarts.pageObjects.BasePage.clicK(BasePage.java:49)
+	at com.JarvisPortfolio.OneStock.clickOnPay(OneStock.java:21)
+	at com.TechStalWarts.testCase.TC_OneStock.tc_os_003(TC_OneStock.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (CKYC)                  </em>
@@ -173,10 +185,10 @@ Session ID: 73d963f79b8bd83fd1755e2a69395493
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=kiran.jadhav1993...)">
-                  </a> <!-- tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=kiran.jadhav1993...) -->
+                  <a name="tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=mayur.gangurde+1...)">
+                  </a> <!-- tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=mayur.gangurde+1...) -->
                   <span class="method-name">tc_os_001</span>
-                  <span class="parameters">({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=kiran.jadhav1993+29@gmail.com}, public void com.TechStalWarts.testCase.TC_OneStock.tc_os_001(java.util.Map,java.lang.reflect.Method))</span>
+                  <span class="parameters">({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=mayur.gangurde+1350@techstalwarts.com}, public void com.TechStalWarts.testCase.TC_OneStock.tc_os_001(java.util.Map,java.lang.reflect.Method))</span>
                   <em>
 (Login)                  </em>
                 </div> <!-- method-content -->
@@ -186,7 +198,7 @@ Session ID: 73d963f79b8bd83fd1755e2a69395493
         </div> <!-- panel InterviewTask_techStalWarts -->
         <div panel-name="test-xml-InterviewTask_techStalWarts" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ts\techstalWartsProject\InterviewTask_TechStalWarts\TestNG.xml</span>
+            <span class="header-content">/home/ts/Task_TechStalWArts/InterviewTask_TechStalWarts/TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -246,16 +258,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc_os_003')
 data.setCell(0, 2, 'com.TechStalWarts.testCase.TC_OneStock')
-data.setCell(0, 3, 87037);
+data.setCell(0, 3, 16285);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'tc_os_001')
 data.setCell(1, 2, 'com.TechStalWarts.testCase.TC_OneStock')
-data.setCell(1, 3, 7860);
+data.setCell(1, 3, 8338);
 window.suiteTableData['InterviewTask_techStalWarts']= { tableData: data, tableDiv: 'times-div-InterviewTask_techStalWarts'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-InterviewTask_techStalWarts">
               </div> <!-- times-div-InterviewTask_techStalWarts -->
             </div> <!-- times-div -->
@@ -309,24 +321,24 @@ return data;
               <div class="chronological-class-name">com.TechStalWarts.testCase.TC_OneStock</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">pageObjects</span>
-                <span class="method-start">11283 ms</span>
+                <span class="method-start">12561 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=kiran.jadhav1993...)</span>
-                <span class="method-start">11378 ms</span>
+                <span class="method-name">tc_os_001({password=123, DOB=, AdharCardNum=, testname=tc_os_001, PAN=, execute=yes, username=mayur.gangurde+1...)</span>
+                <span class="method-start">12733 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tc_os_003({password=, DOB=12021993, AdharCardNum=, testname=tc_os_003, PAN=BAYPJ2260G, execute=yes, username=}...)</span>
-                <span class="method-start">19263 ms</span>
+                <span class="method-start">21131 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.TechStalWarts.testCase.TC_portFolioGeneration</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">106608 ms</span>
+                <span class="method-start">37954 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
